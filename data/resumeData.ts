@@ -1,67 +1,92 @@
 export const RESUME_DATA = {
   header: {
     name: "ABDULAZEEZ NURUDEEN ADEDOTUN",
-    title: "Backend Engineer | AI Engineer | Mechatronics Engineer",
+    title: "Mechatronics Engineer | Machine Learning | Backend Engineer & Cloud Computing",
     location: "Lagos, Nigeria",
+    phone: "+234 902 636 6179",
     email: "nurdul4002@gmail.com",
     github: "github.com/quantumdata66",
     linkedin: "linkedin.com/in/nurudeen-abdulazeez"
   },
-  summary: "Results-driven Mechatronics Engineer specializing in AI application development, scalable backend architecture, and embedded systems engineering. Experienced in building production-ready applications using Python, FastAPI, Supabase, PostgreSQL, Next.js, and Scikit-learn. Proven ability to bridge hardware telemetry with machine intelligence to build robust software systems.",
+  summary: "Mechatronics Engineering graduate with experience developing intelligent software systems, backend applications, and AI-powered solutions. Passionate about backend engineering, machine learning, cloud computing, and MLOps, with hands-on experience building production ready applications and engineering solutions. Built and deployed Quantum Jersey, a full-stack e-commerce platform integrating Supabase, PostgreSQL, cloud storage, authentication, and AI-assisted product management. Currently collaborating in a software development team to build Notely, a podcast note taking application, contributing to AI algorithm development, transcript processing, and backend functionality. Continuously expanding expertise in Python, FastAPI, SQL, Docker, AWS, and modern software engineering practices.",
   education: {
-    degree: "Bachelor of Engineering (B.Eng.) in Mechatronics Engineering",
-    institution: "Federal University / Engineering University",
-    location: "Nigeria",
-    graduationYear: "2026",
-    honors: "Final Year Capstone Distinction"
+    degree: "Bachelor of Engineering (B.Eng.) – Mechatronics Engineering",
+    institution: "Air Force Institute of Technology (AFIT)",
+    location: "Kaduna, Nigeria",
+    graduationYear: "2026"
   },
+  certifications: [
+    "Google Data Analytics Professional Certificate"
+  ],
+  coreCompetencies: [
+    "Backend Development",
+    "Machine Learning",
+    "Cloud Computing",
+    "REST API Development",
+    "Database Management",
+    "Software Development",
+    "Team Collaboration",
+    "Problem Solving",
+    "Analytical Thinking",
+    "Technical Documentation",
+    "Continuous Learning"
+  ],
   technicalSkills: {
-    programming: ["Python", "SQL", "TypeScript", "JavaScript", "C/C++", "MATLAB"],
-    backendCloud: ["FastAPI", "RESTful APIs", "Supabase", "PostgreSQL", "Docker", "AWS", "Vercel", "Git/GitHub"],
-    machineLearningAI: ["Scikit-learn", "NumPy", "Pandas", "OpenAI API", "Whisper", "Sensor Fusion", "Random Forest"],
-    engineeringHardware: ["Linux OS", "Raspberry Pi", "PyQt5", "SOLIDWORKS", "Relay Testing", "Substation Protection Systems"]
+    programming: ["Python", "SQL", "JavaScript", "HTML5", "CSS3"],
+    backendCloud: ["FastAPI", "REST APIs", "Authentication", "Supabase", "Git", "GitHub", "Docker", "Vercel", "AWS"],
+    machineLearningData: ["NumPy", "Pandas", "Scikit-learn"],
+    engineeringTools: ["SOLIDWORKS", "MATLAB", "Raspberry Pi", "Linux", "Microsoft Office Suite"]
   },
   projects: [
     {
-      name: "Notely — AI Podcast Note-Taking Platform",
-      role: "AI & Backend Developer",
-      period: "2025 - Present",
+      name: "Notely (Ongoing)",
+      role: "AI / Backend Developer | Team Project",
+      period: "Present",
       bullets: [
-        "Collaborated in a software engineering team to architect an AI-driven podcast summary platform.",
-        "Built async RSS ingestion pipelines and podcast episode matching algorithms using Python & FastAPI.",
-        "Integrated Whisper AI and OpenAI endpoints to transcribe audio and generate timestamped chapter notes."
-      ]
+        "Collaborating in a cross-functional software development team to build Notely, a mobile application that enables users to capture timestamped notes while listening to podcasts.",
+        "Contributing to the design and implementation of AI-driven episode matching and transcript processing algorithms.",
+        "Developing backend logic for transcript analysis, confidence scoring, and intelligent note extraction.",
+        "Working collaboratively using Git and GitHub through feature branching, pull requests, and code reviews.",
+        "Collaborating with frontend and backend developers to integrate AI functionality into the application."
+      ],
+      technologies: ["TypeScript", "Node.js", "Git", "GitHub", "AI Algorithms", "Transcript Processing"]
     },
     {
-      name: "Quantum Jersey — Football Apparel E-Commerce Engine",
-      role: "Fullstack & Database Architect",
+      name: "Quantum Jersey – Full-Stack E-commerce Platform",
+      role: "Full-Stack Developer",
       period: "2025",
       bullets: [
-        "Engineered a production e-commerce platform deployed on Vercel Edge with sub-second response times.",
-        "Configured Supabase Row-Level Security (RLS) and PostgreSQL database relational schema.",
-        "Built an interactive admin dashboard for stock management and AI-assisted cataloging."
-      ]
+        "Built and deployed a production-ready football merchandise e-commerce platform.",
+        "Implemented Supabase Authentication, PostgreSQL database integration, cloud object storage, and secure Row-Level Security (RLS) policies.",
+        "Developed an administrative dashboard supporting product management, inventory updates, and image uploads.",
+        "Integrated AI-assisted product management workflows to streamline product publishing.",
+        "Deployed the application on Vercel with a custom domain."
+      ],
+      technologies: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "GitHub", "Vercel"]
     },
     {
-      name: "Underground IED Detection System — Final Year Capstone",
-      role: "Lead Mechatronics & ML Engineer",
+      name: "Design and Development of an Underground IED Detection System Using Sensor Fusion",
+      role: "Bachelor of Engineering Final Year Project",
       period: "2025 - 2026",
       bullets: [
-        "Designed and fabricated an autonomous multi-sensor subterranean explosive detection system.",
-        "Implemented sensor fusion combining magnetometer, gas sensor, and thermal array readings.",
-        "Trained a Random Forest model on Raspberry Pi 4 achieving 94%+ hazard detection accuracy with real-time PyQt visualization."
-      ]
+        "Designed and developed an intelligent underground IED detection prototype using sensor fusion techniques.",
+        "Integrated magnetic, thermal, and gas sensors with Raspberry Pi for real-time environmental monitoring.",
+        "Developed a PyQt graphical user interface for system visualization and monitoring.",
+        "Evaluated machine learning techniques, including random forest, to improve detection reliability and reduce false positives."
+      ],
+      technologies: ["Python", "Raspberry Pi", "PyQt", "Machine Learning", "Sensor Fusion"]
     }
   ],
   experience: [
     {
       company: "Transmission Company of Nigeria (TCN)",
-      role: "Protection, Control & Metering (PCM) Engineer Intern",
-      period: "2024",
+      role: "Industrial Trainee",
+      period: "Jul 2021–Dec 2021, Jun–Sep 2024, Apr–Oct 2025",
       bullets: [
-        "Executed diagnostic testing and secondary injection calibration for numerical protective relays across high-voltage grid substations.",
-        "Analyzed system fault records and oscillograms to evaluate circuit breaker tripping response times and protection coordination.",
-        "Assisted in grid energy meter verification and telemetry signal maintenance for national power infrastructure."
+        "Worked across transmission operations and the Protection, Control & Metering (PC&M) department.",
+        "Assisted in preventive maintenance of high-voltage transmission infrastructure.",
+        "Participated in relay testing, protection system maintenance, and equipment inspections.",
+        "Gained practical experience in electrical transmission systems, engineering maintenance, and operational safety procedures."
       ]
     }
   ]

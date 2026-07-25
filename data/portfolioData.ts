@@ -37,7 +37,7 @@ export interface TimelineItem {
 export const PERSONAL_INFO = {
   name: "Abdulazeez Nurudeen Adedotun",
   shortName: "Abdulazeez Nurudeen",
-  title: "Backend Engineer | AI Engineer | Mechatronics Engineer",
+  title: "Mechatronics Engineer | Machine Learning | Backend Engineer & Cloud Computing",
   roles: [
     "Backend Engineer",
     "Machine Learning Engineer",
@@ -45,6 +45,7 @@ export const PERSONAL_INFO = {
     "AI Systems Builder"
   ],
   location: "Lagos, Nigeria",
+  phone: "+234 902 636 6179",
   email: "nurdul4002@gmail.com",
   github: "https://github.com/quantumdata66",
   linkedin: "https://linkedin.com/in/nurudeen-abdulazeez",
@@ -61,40 +62,41 @@ export const PERSONAL_INFO = {
 
 export const TIMELINE_ITEMS: TimelineItem[] = [
   {
-    year: "2021",
+    year: "Jul – Dec 2021",
     title: "Industrial Training (Foundation)",
-    subtitle: "Mechanical & Electrical Systems Mechanics",
-    description: "Initial hands-on engineering immersion focusing on control loops, sensor calibration, and fundamental systems programming.",
-    tags: ["Mechatronics", "Control Systems", "Hardware"]
+    subtitle: "Transmission Operations & System Mechanics",
+    description: "Hands-on engineering immersion focusing on electrical transmission systems, control loops, and operational safety procedures.",
+    tags: ["Mechatronics", "Transmission Systems", "Safety Procedures"]
   },
   {
-    year: "2024",
+    year: "Jun – Sep 2024 & Apr – Oct 2025",
     title: "Transmission Company of Nigeria (TCN)",
-    organization: "Protection, Control & Metering (PCM) Dept",
-    subtitle: "Power System Automation & Protection Engineering",
-    description: "Specialized in high-voltage protective relay testing, substation automation protocol monitoring, grid meter calibration, and preventive maintenance of critical energy infrastructure.",
-    tags: ["Relay Testing", "PCM", "Power Systems", "Grid Automation"]
+    organization: "Protection, Control & Metering (PC&M) Dept",
+    subtitle: "High-Voltage Power Systems & Protection Engineering",
+    description: "Assisted in preventive maintenance of high-voltage transmission infrastructure, relay testing, protection system maintenance, and equipment inspections.",
+    tags: ["Relay Testing", "PC&M", "Power Infrastructure", "Preventive Maintenance"]
   },
   {
     year: "2025",
     title: "Built Quantum Jersey",
-    subtitle: "Production E-Commerce Platform Engine",
-    description: "Architected and launched a production-ready football apparel platform featuring Supabase Auth, PostgreSQL RLS, storage buckets, custom domain routing, and Vercel edge deployment.",
-    tags: ["Next.js", "Supabase", "PostgreSQL", "Vercel"]
+    subtitle: "Full-Stack E-Commerce Platform",
+    description: "Built and deployed a production-ready football merchandise e-commerce platform integrating Supabase Auth, PostgreSQL RLS, cloud storage, AI-assisted product management, and Vercel custom domain hosting.",
+    tags: ["Full-Stack", "Supabase", "PostgreSQL", "Vercel"]
   },
   {
     year: "2026",
     title: "B.Eng Mechatronics Engineering Graduation",
+    organization: "Air Force Institute of Technology (AFIT), Kaduna",
     subtitle: "Bachelor of Engineering Capstone Completion",
-    description: "Completed undergraduate degree with distinction in Mechatronics Engineering, defending an AI-driven multi-sensor underground hazard detection system.",
-    tags: ["B.Eng Mechatronics", "Sensor Fusion", "Random Forest"]
+    description: "Completed undergraduate degree in Mechatronics Engineering, designing and developing an intelligent underground IED detection prototype using multi-sensor fusion and Random Forest machine learning.",
+    tags: ["B.Eng Mechatronics", "AFIT Kaduna", "Sensor Fusion", "Random Forest"]
   },
   {
     year: "Current",
     title: "Building Notely & Learning MLOps",
-    subtitle: "AI Systems Engineering & Cloud Architecture",
-    description: "Engineered core backend and transcript matching pipeline for Notely AI. Expanding mastery across AWS serverless, PyTorch model deployment, and production MLOps workflows.",
-    tags: ["FastAPI", "AI Integration", "AWS", "MLOps"],
+    subtitle: "AI Application & Backend Engineering",
+    description: "Collaborating in a software team building Notely (podcast note taking app), contributing to AI episode matching algorithms, transcript processing, and backend functionality.",
+    tags: ["Notely", "TypeScript", "FastAPI", "AI Integration", "AWS", "MLOps"],
     isCurrent: true
   }
 ];
@@ -102,61 +104,62 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     category: "Languages",
-    description: "Core programming languages used for high-performance backend, data manipulation, and fullstack apps.",
+    description: "Core programming languages for backend microservices, data analysis, and web development.",
     skills: [
       { name: "Python", highlighted: true },
       { name: "SQL", highlighted: true },
-      { name: "TypeScript", highlighted: true },
-      { name: "JavaScript" }
+      { name: "JavaScript", highlighted: true },
+      { name: "HTML5" },
+      { name: "CSS3" }
     ]
   },
   {
     category: "Backend",
-    description: "Frameworks and patterns for scalable microservices, API design, and authentication.",
+    description: "Frameworks, protocols, and database services for scalable application architecture.",
     skills: [
       { name: "FastAPI", highlighted: true },
       { name: "REST APIs", highlighted: true },
-      { name: "Supabase", highlighted: true },
-      { name: "Authentication" }
+      { name: "Authentication", highlighted: true },
+      { name: "Supabase", highlighted: true }
     ]
   },
   {
     category: "Database",
-    description: "Relational database modeling, query optimization, indexing, and vector embeddings.",
+    description: "Relational database modeling, query tuning, and cloud data platforms.",
     skills: [
       { name: "PostgreSQL", highlighted: true },
-      { name: "Supabase DB", highlighted: true },
-      { name: "SQL Query Tuning" }
+      { name: "Supabase DB", highlighted: true }
     ]
   },
   {
-    category: "Cloud & Infrastructure",
-    description: "Containerization, edge deployments, continuous integration, and cloud services.",
+    category: "Cloud & DevOps",
+    description: "Version control, containerization, cloud infrastructure, and deployment pipelines.",
     skills: [
+      { name: "Git", highlighted: true },
+      { name: "GitHub", highlighted: true },
       { name: "Docker", highlighted: true },
-      { name: "AWS", highlighted: true },
       { name: "Vercel", highlighted: true },
-      { name: "GitHub Actions" }
+      { name: "AWS", highlighted: true }
     ]
   },
   {
-    category: "Machine Learning & AI",
-    description: "Data analysis, feature extraction, tabular ML classification, and LLM API integrations.",
+    category: "Machine Learning & Data",
+    description: "Data analysis libraries and tabular classification ML frameworks.",
     skills: [
       { name: "NumPy", highlighted: true },
       { name: "Pandas", highlighted: true },
-      { name: "Scikit-learn", highlighted: true },
-      { name: "Whisper & LLM APIs" }
+      { name: "Scikit-learn", highlighted: true }
     ]
   },
   {
-    category: "Engineering & Hardware",
-    description: "Edge hardware integration, signal acquisition, Linux systems, and physical design tooling.",
+    category: "Engineering & Tools",
+    description: "Hardware telemetry, CAD software, edge computing, and operating systems.",
     skills: [
-      { name: "MATLAB" },
       { name: "SOLIDWORKS" },
-      { name: "Linux Administration", highlighted: true },
-      { name: "Raspberry Pi", highlighted: true }
+      { name: "MATLAB" },
+      { name: "Raspberry Pi", highlighted: true },
+      { name: "Linux", highlighted: true },
+      { name: "Microsoft Office Suite" }
     ]
   }
 ];
@@ -165,23 +168,23 @@ export const PROJECTS: Project[] = [
   {
     id: "notely",
     title: "Notely",
-    subtitle: "AI-Powered Podcast Note-Taking & Transcript Intelligence Platform",
-    role: "AI & Backend Developer",
+    subtitle: "AI Podcast Note-Taking & Transcript Intelligence Platform",
+    role: "AI / Backend Developer | Team Project",
     status: "In Development",
     featured: true,
-    description: "Collaborating in a software development team to build an AI-powered podcast note-taking application that intelligently matches podcast episodes, processes audio transcripts, and generates structured, timestamped notes.",
-    problem: "Podcast listeners and researchers waste hours manually skimming long-form audio transcripts or taking fragmented notes without actionable timestamp anchors or semantic search capability.",
-    solution: "Notely automates the ingestion of podcast RSS feeds, uses speech-to-text models to generate structured transcripts, and executes customized LLM prompts to extract key takeaways, chapters, action items, and quotes anchored with direct timecodes.",
-    myRole: "Engineered the core backend pipeline for RSS feed parsing, automated transcript processing queues, episode matching algorithms, and RESTful API endpoints for the client layer.",
+    description: "Collaborating in a cross-functional software development team to build Notely, a mobile application that enables users to capture timestamped notes while listening to podcasts.",
+    problem: "Podcast listeners waste hours manually skimming long-form audio transcripts or taking fragmented notes without actionable timestamp anchors.",
+    solution: "Notely automates podcast transcript ingestion, AI episode matching, transcript analysis, confidence scoring, and intelligent note extraction.",
+    myRole: "Contributed to AI algorithm development, transcript processing pipelines, confidence scoring, and backend functionality, collaborating via Git branching and code reviews.",
     responsibilities: [
-      "Designed episode matching algorithms to pair incoming audio files with canonical RSS feed metadata.",
-      "Implemented transcript processing pipelines for entity recognition and note summaries.",
-      "Developed high-throughput backend APIs using FastAPI and Supabase.",
-      "Integrated OpenAI & Whisper AI APIs for low-latency summary generation.",
-      "Maintained strict Git workflow and collaborative team code reviews."
+      "Collaborated in a cross-functional software team to build timestamped podcast note capturing.",
+      "Designed and implemented AI-driven episode matching and transcript processing algorithms.",
+      "Developed backend logic for transcript analysis, confidence scoring, and intelligent note extraction.",
+      "Maintained Git & GitHub feature branching, pull requests, and peer code reviews.",
+      "Collaborated with frontend and backend developers to integrate AI functionality."
     ],
-    architecture: "Event-driven asynchronous microservice architecture. Ingests podcast RSS feeds -> Queue task processing -> Audio transcription -> Vector embedding storage in Supabase PostgreSQL -> FastAPI response layer for Next.js frontend.",
-    techStack: ["Python", "FastAPI", "Supabase", "PostgreSQL", "OpenAI API", "Whisper", "Docker"],
+    architecture: "Asynchronous transcript ingestion pipeline -> AI episode matching & confidence scoring -> Backend API service -> Mobile client app.",
+    techStack: ["TypeScript", "Node.js", "Python", "FastAPI", "Git", "GitHub", "AI Algorithms"],
     image: "/images/project-notely.jpg",
     githubUrl: "https://github.com/quantumdata66",
     liveUrl: "#"
@@ -189,49 +192,47 @@ export const PROJECTS: Project[] = [
   {
     id: "quantum-jersey",
     title: "Quantum Jersey",
-    subtitle: "Production-Ready Football Apparel E-Commerce Platform",
-    role: "Fullstack & Database Architect",
+    subtitle: "Full-Stack Football Merchandise E-Commerce Platform",
+    role: "Full-Stack Developer",
     status: "Production Ready",
     featured: true,
-    description: "A high-performance, dark-aesthetic e-commerce platform custom designed for football kit enthusiasts with secure authentication, real-time inventory management, cloud storage, and AI-assisted cataloging.",
-    problem: "Traditional sports retail templates suffer from slow page loads, cluttered interfaces, poor mobile responsiveness, and fragile database security models.",
-    solution: "Quantum Jersey delivers sub-second page transitions, dynamic glassmorphic product cards, automated Supabase Row-Level Security (RLS) policies, and an intuitive admin dashboard for inventory management.",
-    myRole: "Designed the fullstack architecture from database schema normalization to Vercel production deployment and payment flow setup.",
+    description: "Built and deployed a production-ready football merchandise e-commerce platform with Supabase Auth, PostgreSQL, cloud object storage, and AI-assisted product management.",
+    problem: "Traditional sports retail templates suffer from slow page loads, poor security controls, and tedious manual inventory uploads.",
+    solution: "Quantum Jersey delivers fast responsive pages, secure Row-Level Security (RLS) policies, an admin dashboard for inventory updates, and AI-assisted product publishing workflows.",
+    myRole: "Architected and built the complete platform from database schema to Vercel deployment with custom domain integration.",
     features: [
-      "Supabase Row-Level Security (RLS) Authentication",
-      "PostgreSQL relational database schema with custom indexes",
-      "Cloud Storage integration for high-resolution jersey media",
-      "Comprehensive Admin Dashboard for stock management",
-      "AI-assisted product categorization and description generator",
-      "Responsive Dark Glassmorphism UI",
-      "Custom Domain deployment on Vercel Edge Network"
+      "Supabase Authentication & Row-Level Security (RLS)",
+      "PostgreSQL relational database integration",
+      "Cloud Object Storage for merchandise media assets",
+      "Administrative Dashboard for product management & inventory updates",
+      "AI-assisted product management workflows",
+      "Vercel deployment with custom domain"
     ],
-    architecture: "Next.js App Router frontend consuming Supabase Client and Server SDKs, leveraging server-side rendering (SSR) and edge caching for instant product filtering and stock validation.",
-    techStack: ["Next.js 15", "TypeScript", "TailwindCSS", "Supabase", "PostgreSQL", "Vercel"],
+    architecture: "Full-stack web application consuming Supabase Auth & PostgreSQL database with RLS policies, media bucket storage, and Vercel edge deployment.",
+    techStack: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "GitHub", "Vercel"],
     image: "/images/project-quantum-jersey.jpg",
     githubUrl: "https://github.com/quantumdata66/quantum-jersey",
     liveUrl: "https://quantum-jersey.vercel.app"
   },
   {
     id: "ied-detection",
-    title: "Underground IED Detection System",
-    subtitle: "Multi-Sensor Fusion & ML Autonomous Underground Hazard Classification",
-    role: "Lead Mechatronics & ML Engineer",
+    title: "Design and Development of an Underground IED Detection System Using Sensor Fusion",
+    subtitle: "Bachelor of Engineering Final Year Capstone Project",
+    role: "Mechatronics & ML Engineer",
     status: "Final Year Project",
     featured: true,
-    description: "Bachelor of Engineering Final Year Capstone Project. Designed and fabricated an embedded mechatronics system that combines magnetic, gas, and thermal telemetry with Random Forest machine learning algorithms to detect subterranean explosive threats.",
-    problem: "Underground improvised explosive devices pose severe threats to personnel and infrastructure. Manual detection is dangerous, while single-sensor detectors produce high rates of false positives.",
-    solution: "Built a multi-sensor fusion array on an autonomous Raspberry Pi 4 unit. Telemetry streams from magnetometers, gas sensors, and thermal arrays are processed in real-time by a trained Random Forest model to achieve high-precision hazard classification.",
-    myRole: "Designed sensor hardware integration circuits, developed data collection pipelines, trained the machine learning classifier, and built the PyQt real-time telemetry GUI.",
+    description: "Bachelor of Engineering Final Year Project at Air Force Institute of Technology (AFIT), Kaduna. Designed and developed an intelligent underground IED detection prototype using multi-sensor fusion and Random Forest machine learning.",
+    problem: "Manual detection of subterranean explosive devices is dangerous, and single-sensor systems suffer high rates of false alarms.",
+    solution: "Built a multi-sensor fusion system integrating magnetic, thermal, and gas sensors with Raspberry Pi for real-time monitoring and Random Forest classification.",
+    myRole: "Designed sensor hardware integration, developed the PyQt visualization GUI, and evaluated Random Forest machine learning models to improve detection reliability.",
     features: [
-      "Hardware Sensor Fusion (Gas, Thermal, Magnetometer)",
-      "Random Forest ML Model with 94%+ classification accuracy",
-      "Raspberry Pi 4 Edge Compute Unit running Linux daemons",
-      "PyQt Desktop System Telemetry & Visual Alert Dashboard",
-      "Real-time signal filtering and anomaly detection"
+      "Multi-Sensor Fusion (Magnetic, Thermal, Gas Sensors)",
+      "Raspberry Pi edge compute unit for real-time environmental monitoring",
+      "PyQt Graphical User Interface (GUI) for telemetry visualization",
+      "Random Forest machine learning model to reduce false positives"
     ],
-    architecture: "Sensor Signal Acquisition (Analog/I2C) -> Raspberry Pi Hardware Driver -> Signal Preprocessing & Feature Vector Extraction -> Scikit-Learn Random Forest Classifier -> PyQt Telemetry GUI over local socket stream.",
-    techStack: ["Python", "Scikit-learn", "Raspberry Pi", "PyQt5", "Linux", "MATLAB", "Sensor Fusion"],
+    architecture: "Sensor Signal Ingestion (Magnetic, Thermal, Gas) -> Raspberry Pi Processing Daemon -> Machine Learning Classifier (Random Forest) -> PyQt Telemetry GUI.",
+    techStack: ["Python", "Raspberry Pi", "PyQt", "Machine Learning", "Random Forest", "Sensor Fusion"],
     image: "/images/project-ied-detection.jpg",
     githubUrl: "https://github.com/quantumdata66/underground-ied-detection",
     liveUrl: "#"
@@ -240,14 +241,14 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCE_DETAILS = {
   company: "Transmission Company of Nigeria (TCN)",
-  department: "Protection, Control & Metering (PCM)",
-  location: "Lagos / National Grid Station, Nigeria",
-  period: "Industrial Training / Protection Engineer Intern",
+  department: "Protection, Control & Metering (PC&M) Department",
+  location: "Nigeria",
+  period: "Industrial Trainee | Jul 2021–Dec 2021, Jun–Sep 2024, Apr–Oct 2025",
   highlights: [
-    "Performed high-voltage protective relay testing and secondary injection calibration for numerical and electromechanical distance, overcurrent, and differential protection relays.",
-    "Participated in preventive maintenance and diagnostic troubleshooting of current transformers (CTs), voltage transformers (VTs), and circuit breaker tripping circuits across key transmission substations.",
-    "Analyzed grid disturbance oscillograms and fault records to identify protection scheme response times and system stability metrics.",
-    "Collaborated with senior metering engineers to verify energy meter accuracy and telemetry signals transmitted to the National Control Center."
+    "Worked across transmission operations and the Protection, Control & Metering (PC&M) department.",
+    "Assisted in preventive maintenance of high-voltage transmission infrastructure.",
+    "Participated in relay testing, protection system maintenance, and equipment inspections.",
+    "Gained practical experience in electrical transmission systems, engineering maintenance, and operational safety procedures."
   ]
 };
 
@@ -271,7 +272,7 @@ export const BLOG_POSTS = [
   {
     slug: "supabase-rls-production-ecommerce",
     title: "Zero-Trust Database Security: Row-Level Security Patterns in Supabase",
-    description: "Designing airtight PostgreSQL RLS policies and JWT session claims for modern Next.js 15 e-commerce applications.",
+    description: "Designing airtight PostgreSQL RLS policies and JWT session claims for modern Next.js e-commerce applications.",
     date: "Coming Soon",
     readTime: "5 min read",
     tag: "Database & Cloud"
