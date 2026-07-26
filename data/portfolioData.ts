@@ -234,7 +234,7 @@ export const PROJECTS: Project[] = [
     ],
     architecture: "Sensor Signal Ingestion (Magnetic, Thermal, Gas) -> Raspberry Pi Processing Daemon -> Machine Learning Classifier (Random Forest) -> PyQt HMI Telemetry GUI.",
     techStack: ["Python", "Raspberry Pi", "PyQt", "Machine Learning", "Random Forest", "Sensor Fusion", "HMI"],
-    image: "/images/project-ied-detection.jpg",
+    image: "/images/defence.jpg",
     githubUrl: "https://github.com/Danny26y/UED_Model/",
     liveUrl: "#"
   }
@@ -245,6 +245,11 @@ export const EXPERIENCE_DETAILS = {
   department: "Protection, Control & Metering (PC&M) Department",
   location: "Nigeria",
   period: "Industrial Trainee | Jul 2021–Dec 2021, Jun–Sep 2024, Apr–Oct 2025",
+  photos: [
+    { src: "/images/tcn-1.jpg", caption: "High-Voltage Relay Protection & Maintenance Field Work" },
+    { src: "/images/tcn-2.jpg", caption: "PC&M Secondary Injection Testing & Equipment Inspection" },
+    { src: "/images/tcn-3.jpg", caption: "Transmission Substation Grid Telemetry & Operational Operations" }
+  ],
   highlights: [
     "Worked across transmission operations and the Protection, Control & Metering (PC&M) department.",
     "Assisted in preventive maintenance of high-voltage transmission infrastructure.",

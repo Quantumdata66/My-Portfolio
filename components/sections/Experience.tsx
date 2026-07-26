@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Zap, Activity, CheckCircle2 } from "lucide-react";
+import { Zap, Activity, CheckCircle2, Camera } from "lucide-react";
 import { EXPERIENCE_DETAILS } from "@/data/portfolioData";
+import Image from "next/image";
 
 export const Experience: React.FC = () => {
   return (
@@ -25,7 +26,7 @@ export const Experience: React.FC = () => {
         </div>
 
         {/* Transmission Company of Nigeria Card */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -70,6 +71,35 @@ export const Experience: React.FC = () => {
                     <CheckCircle2 className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
                     <span className="leading-relaxed">{highlight}</span>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Real TCN Field Work Photos Showcase */}
+            <div className="space-y-4 pt-4 border-t border-zinc-800/80">
+              <h4 className="text-xs uppercase font-bold text-zinc-400 tracking-wider flex items-center gap-2">
+                <Camera className="w-4 h-4 text-blue-400" />
+                Field Operations & Substation Highlights
+              </h4>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {EXPERIENCE_DETAILS.photos?.map((photo, idx) => (
+                  <motion.div
+                    key={idx}
+                    whileHover={{ scale: 1.02 }}
+                    className="relative group rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 aspect-[4/3] shadow-lg"
+                  >
+                    <Image
+                      src={photo.src}
+                      alt={photo.caption}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+                    <div className="absolute bottom-3 left-3 right-3 text-[11px] font-mono text-zinc-300 line-clamp-2">
+                      {photo.caption}
+                    </div>
+                  </motion.div>
                 ))}
               </div>
             </div>

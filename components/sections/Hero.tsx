@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDownRight, FileText, Send, Terminal, MapPin } from "lucide-react";
+import { ArrowDownRight, FileText, Send, MapPin, Award } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolioData";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import Image from "next/image";
@@ -134,7 +134,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             </motion.div>
           </div>
 
-          {/* Right Column: Premium AI Engineer Studio Portrait */}
+          {/* Right Column: Defense System Interface Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -142,11 +142,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             className="lg:col-span-5 relative flex justify-center"
           >
             <div className="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden glass-card p-2 border border-zinc-800 shadow-2xl group">
-              {/* Portrait Container */}
+              {/* Defense Photo Container */}
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-zinc-900">
                 <Image
-                  src="/images/portrait.jpg"
-                  alt="Abdulazeez Nurudeen Adedotun"
+                  src="/images/defence.jpg"
+                  alt="Abdulazeez B.Eng Capstone Defense & HMI Presentation"
                   fill
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   priority
@@ -158,10 +158,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 {/* Floating Telemetry Widget */}
                 <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#090909]/90 border border-white/10 backdrop-blur-md flex items-center justify-between text-xs font-mono text-zinc-300">
                   <div className="flex items-center gap-2">
-                    <Terminal className="w-4 h-4 text-blue-400" />
-                    <span>System Status: <strong className="text-emerald-400">ONLINE</strong></span>
+                    <Award className="w-4 h-4 text-amber-400" />
+                    <span>AFIT Capstone Presentation</span>
                   </div>
-                  <span className="text-[10px] text-zinc-500">WAT (GMT+1)</span>
+                  <span className="text-[10px] text-emerald-400 font-bold">B.Eng Mechatronics</span>
                 </div>
               </div>
             </div>
