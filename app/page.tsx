@@ -10,9 +10,11 @@ import { BackToTop } from "@/components/ui/BackToTop";
 
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
-import { Skills } from "@/components/sections/Skills";
+import { WhatIBuild } from "@/components/sections/WhatIBuild";
 import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
+import { CurrentlyBuilding } from "@/components/sections/CurrentlyBuilding";
+import { Skills } from "@/components/sections/Skills";
 import { BlogSection } from "@/components/sections/BlogSection";
 import { Contact } from "@/components/sections/Contact";
 
@@ -31,12 +33,14 @@ export default function Home() {
         onOpenResume={() => setResumeOpen(true)}
       />
 
-      {/* Main Sections */}
+      {/* Main Sections - Recruiter-Optimized Storyline Flow */}
       <Hero onOpenResume={() => setResumeOpen(true)} />
       <About />
+      <WhatIBuild />
       <Projects />
-      <Skills />
       <Experience />
+      <CurrentlyBuilding />
+      <Skills />
       <BlogSection />
       <Contact />
 
@@ -53,7 +57,7 @@ export default function Home() {
         onOpenResume={() => setResumeOpen(true)}
       />
 
-      {/* Interactive Resume View & Download Modal */}
+      {/* Interactive Resume View & PDF Download Modal */}
       <ResumeModal
         isOpen={resumeOpen}
         onClose={() => setResumeOpen(false)}
