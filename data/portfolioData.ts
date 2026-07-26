@@ -80,7 +80,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     year: "2025",
     title: "Built Quantum Jersey",
     subtitle: "Full-Stack E-Commerce Platform",
-    description: "Built and deployed a production-ready football merchandise e-commerce platform integrating Supabase Auth, PostgreSQL RLS, cloud storage, AI-assisted product management, and Vercel custom domain hosting.",
+    description: "Built and deployed a production-ready football merchandise e-commerce platform integrating Supabase Auth, PostgreSQL RLS, cloud storage, AI-assisted product management, and Vercel hosting.",
     tags: ["Full-Stack", "Supabase", "PostgreSQL", "Vercel"]
   },
   {
@@ -212,7 +212,7 @@ export const PROJECTS: Project[] = [
     techStack: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "GitHub", "Vercel"],
     image: "/images/project-quantum-jersey.jpg",
     githubUrl: "https://github.com/quantumdata66/quantum-jersey",
-    liveUrl: "https://quantum-jersey.vercel.app"
+    liveUrl: "https://quantumjersey.vercel.app/"
   },
   {
     id: "ied-detection",
