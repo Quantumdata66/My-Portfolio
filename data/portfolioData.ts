@@ -88,7 +88,7 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
     title: "B.Eng Mechatronics Engineering Graduation",
     organization: "Air Force Institute of Technology (AFIT), Kaduna",
     subtitle: "Bachelor of Engineering Capstone Completion",
-    description: "Completed undergraduate degree in Mechatronics Engineering, designing and developing an intelligent underground IED detection prototype using multi-sensor fusion and Random Forest machine learning.",
+    description: "Completed undergraduate degree in Mechatronics Engineering, designing and developing an intelligent underground IED detection prototype using multi-sensor fusion, HMI GUI, and Random Forest machine learning.",
     tags: ["B.Eng Mechatronics", "AFIT Kaduna", "Sensor Fusion", "Random Forest"]
   },
   {
@@ -217,24 +217,25 @@ export const PROJECTS: Project[] = [
   {
     id: "ied-detection",
     title: "Design and Development of an Underground IED Detection System Using Sensor Fusion",
-    subtitle: "Bachelor of Engineering Final Year Capstone Project",
+    subtitle: "Bachelor of Engineering Final Year Capstone Project (with HMI System)",
     role: "Mechatronics & ML Engineer",
     status: "Final Year Project",
     featured: true,
-    description: "Bachelor of Engineering Final Year Project at Air Force Institute of Technology (AFIT), Kaduna. Designed and developed an intelligent underground IED detection prototype using multi-sensor fusion and Random Forest machine learning.",
+    description: "Bachelor of Engineering Final Year Project at Air Force Institute of Technology (AFIT), Kaduna. Designed and developed an intelligent underground IED detection prototype using multi-sensor fusion, HMI visualization system, and Random Forest machine learning.",
     problem: "Manual detection of subterranean explosive devices is dangerous, and single-sensor systems suffer high rates of false alarms.",
-    solution: "Built a multi-sensor fusion system integrating magnetic, thermal, and gas sensors with Raspberry Pi for real-time monitoring and Random Forest classification.",
-    myRole: "Designed sensor hardware integration, developed the PyQt visualization GUI, and evaluated Random Forest machine learning models to improve detection reliability.",
+    solution: "Built a multi-sensor fusion system integrating magnetic, thermal, and gas sensors with Raspberry Pi for real-time monitoring, HMI GUI, and Random Forest classification.",
+    myRole: "Designed sensor hardware integration, developed the PyQt HMI graphical user interface, and evaluated Random Forest machine learning models to improve detection reliability.",
     features: [
       "Multi-Sensor Fusion (Magnetic, Thermal, Gas Sensors)",
       "Raspberry Pi edge compute unit for real-time environmental monitoring",
-      "PyQt Graphical User Interface (GUI) for telemetry visualization",
-      "Random Forest machine learning model to reduce false positives"
+      "PyQt Human-Machine Interface (HMI) Graphical User Interface",
+      "Random Forest machine learning model to reduce false positives",
+      "Open Source UED Model & HMI repository"
     ],
-    architecture: "Sensor Signal Ingestion (Magnetic, Thermal, Gas) -> Raspberry Pi Processing Daemon -> Machine Learning Classifier (Random Forest) -> PyQt Telemetry GUI.",
-    techStack: ["Python", "Raspberry Pi", "PyQt", "Machine Learning", "Random Forest", "Sensor Fusion"],
+    architecture: "Sensor Signal Ingestion (Magnetic, Thermal, Gas) -> Raspberry Pi Processing Daemon -> Machine Learning Classifier (Random Forest) -> PyQt HMI Telemetry GUI.",
+    techStack: ["Python", "Raspberry Pi", "PyQt", "Machine Learning", "Random Forest", "Sensor Fusion", "HMI"],
     image: "/images/project-ied-detection.jpg",
-    githubUrl: "https://github.com/quantumdata66/underground-ied-detection",
+    githubUrl: "https://github.com/Danny26y/UED_Model/",
     liveUrl: "#"
   }
 ];

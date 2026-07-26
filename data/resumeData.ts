@@ -34,11 +34,12 @@ Technologies: HTML, CSS, JavaScript, Supabase, PostgreSQL, GitHub, Vercel
 
 Design and Development of an Underground IED Detection System Using Sensor Fusion
 Bachelor of Engineering Final Year Project
-Designed and developed an intelligent underground IED detection prototype using sensor fusion techniques.
+Designed and developed an intelligent underground IED detection prototype using sensor fusion techniques and HMI GUI.
 Integrated magnetic, thermal, and gas sensors with Raspberry Pi for real-time environmental monitoring.
-Developed a PyQt graphical user interface for system visualization and monitoring.
+Developed a PyQt graphical user interface (HMI system) for system visualization and monitoring.
 Evaluated machine learning techniques, including random forest, to improve detection reliability and reduce false positives.
-Technologies: Python, Raspberry Pi, PyQt, Machine Learning, Sensor Fusion
+Technologies: Python, Raspberry Pi, PyQt, HMI, Machine Learning, Sensor Fusion
+GitHub: https://github.com/Danny26y/UED_Model/
 
 INDUSTRIAL EXPERIENCE
 Industrial Trainee  |  Transmission Company of Nigeria (TCN) Jul 2021–Dec 2021, Jun–Sep 2024, Apr–Oct 2025
@@ -125,12 +126,13 @@ export const RESUME_DATA = {
       name: "Design and Development of an Underground IED Detection System Using Sensor Fusion",
       role: "Bachelor of Engineering Final Year Project",
       bullets: [
-        "Designed and developed an intelligent underground IED detection prototype using sensor fusion techniques.",
+        "Designed and developed an intelligent underground IED detection prototype using sensor fusion techniques and HMI GUI.",
         "Integrated magnetic, thermal, and gas sensors with Raspberry Pi for real-time environmental monitoring.",
-        "Developed a PyQt graphical user interface for system visualization and monitoring.",
+        "Developed a PyQt graphical user interface (HMI system) for system visualization and monitoring.",
         "Evaluated machine learning techniques, including random forest, to improve detection reliability and reduce false positives."
       ],
-      technologies: ["Python", "Raspberry Pi", "PyQt", "Machine Learning", "Sensor Fusion"]
+      technologies: ["Python", "Raspberry Pi", "PyQt", "HMI", "Machine Learning", "Sensor Fusion"],
+      githubUrl: "https://github.com/Danny26y/UED_Model/"
     }
   ],
   experience: [
