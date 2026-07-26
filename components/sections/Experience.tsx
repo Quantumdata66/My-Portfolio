@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Zap, Activity, CheckCircle2, Camera } from "lucide-react";
 import { EXPERIENCE_DETAILS } from "@/data/portfolioData";
+import { getAssetPath } from "@/lib/assets";
 import Image from "next/image";
 
 export const Experience: React.FC = () => {
@@ -90,7 +91,7 @@ export const Experience: React.FC = () => {
                     className="relative group rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 aspect-[4/3] shadow-lg"
                   >
                     <Image
-                      src={photo.src}
+                      src={getAssetPath(photo.src)}
                       alt={photo.caption}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"

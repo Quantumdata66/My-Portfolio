@@ -6,6 +6,7 @@ import { FolderKanban, ExternalLink, ArrowRight } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { PROJECTS, Project } from "@/data/portfolioData";
 import { ProjectModal } from "@/components/ui/ProjectModal";
+import { getAssetPath } from "@/lib/assets";
 import Image from "next/image";
 
 export const Projects: React.FC = () => {
@@ -49,7 +50,7 @@ export const Projects: React.FC = () => {
                   <div className={`lg:col-span-7 relative group rounded-2xl overflow-hidden bg-zinc-900 border border-zinc-800 ${isReversed ? "lg:order-2" : "lg:order-1"}`}>
                     <div className="relative w-full aspect-video">
                       <Image
-                        src={project.image}
+                        src={getAssetPath(project.image)}
                         alt={project.title}
                         fill
                         className="object-cover object-top group-hover:scale-105 transition-transform duration-700"

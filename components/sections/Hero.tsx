@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDownRight, FileText, Send, MapPin, Award } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolioData";
 import { StatusBadge } from "@/components/ui/StatusBadge";
+import { getAssetPath } from "@/lib/assets";
 import Image from "next/image";
 
 interface HeroProps {
@@ -145,7 +146,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               {/* Defense Photo Container */}
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-zinc-900">
                 <Image
-                  src="/images/defence.jpg"
+                  src={getAssetPath("/images/defence.jpg")}
                   alt="Abdulazeez B.Eng Capstone Defense & HMI Presentation"
                   fill
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"

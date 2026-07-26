@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ExternalLink, CheckCircle2, Layers, Cpu, Code2, AlertTriangle, Lightbulb } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { Project } from "@/data/portfolioData";
+import { getAssetPath } from "@/lib/assets";
 import Image from "next/image";
 
 interface ProjectModalProps {
@@ -61,7 +62,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {/* Banner Image */}
           <div className="relative w-full h-64 sm:h-80 bg-zinc-900 border-b border-zinc-800">
             <Image
-              src={project.image}
+              src={getAssetPath(project.image)}
               alt={project.title}
               fill
               className="object-cover object-top"
