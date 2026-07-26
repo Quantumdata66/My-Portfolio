@@ -208,7 +208,7 @@ export const PROJECTS: Project[] = [
     ],
     architecture: "Full-stack web application consuming Supabase Auth & PostgreSQL database with RLS policies, media bucket storage, and Vercel edge deployment.",
     techStack: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "GitHub", "Vercel"],
-    image: "/images/project-quantum-jersey.jpg",
+    image: "/images/quantum-jersey.jpg",
     githubUrl: "https://github.com/quantumdata66/quantum-jersey",
     liveUrl: "https://quantumjersey.vercel.app/"
   },
@@ -232,7 +232,7 @@ export const PROJECTS: Project[] = [
     ],
     architecture: "Sensor Signal Ingestion (Magnetic, Thermal, Gas) -> Raspberry Pi Processing Daemon -> Machine Learning Classifier (Random Forest) -> PyQt HMI Telemetry GUI.",
     techStack: ["Python", "Raspberry Pi", "PyQt", "Machine Learning", "Random Forest", "Sensor Fusion", "HMI"],
-    image: "/images/defence.jpg",
+    image: "/images/rover.jpg",
     githubUrl: "https://github.com/Danny26y/UED_Model/",
     liveUrl: "#"
   }

@@ -135,7 +135,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             </motion.div>
           </div>
 
-          {/* Right Column: Defense System Interface Image */}
+          {/* Right Column: Dotun's Main Profile Portrait */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -143,11 +143,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             className="lg:col-span-5 relative flex justify-center"
           >
             <div className="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden glass-card p-2 border border-zinc-800 shadow-2xl group">
-              {/* Defense Photo Container */}
+              {/* Dotun Photo Container */}
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-zinc-900">
                 <Image
-                  src={getAssetPath("/images/defence.jpg")}
-                  alt="Abdulazeez B.Eng Capstone Defense & HMI Presentation"
+                  src={getAssetPath("/images/dotun.jpg")}
+                  alt="Abdulazeez Nurudeen Adedotun"
                   fill
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   priority
@@ -159,10 +159,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 {/* Floating Telemetry Widget */}
                 <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#090909]/90 border border-white/10 backdrop-blur-md flex items-center justify-between text-xs font-mono text-zinc-300">
                   <div className="flex items-center gap-2">
-                    <Award className="w-4 h-4 text-amber-400" />
-                    <span>AFIT Capstone Presentation</span>
+                    <Award className="w-4 h-4 text-blue-400" />
+                    <span>Backend & Machine Learning Engineer</span>
                   </div>
-                  <span className="text-[10px] text-emerald-400 font-bold">B.Eng Mechatronics</span>
+                  <span className="text-[10px] text-emerald-400 font-bold">Lagos, NG</span>
                 </div>
               </div>
             </div>
