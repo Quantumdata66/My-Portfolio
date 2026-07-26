@@ -4,13 +4,13 @@ Lagos, Nigeria  |  +234 902 636 6179   |  nurdul4002@gmail.com
 LinkedIn: linkedin.com/in/nurudeen-abdulazeez  |  GitHub: github.com/quantumdata66
 
 PROFESSIONAL SUMMARY
-Mechatronics Engineering graduate with experience developing intelligent software systems, backend applications, and AI-powered solutions. Passionate about backend engineering, machine learning, cloud computing, and MLOps, with hands-on experience building production ready applications and engineering solutions. Built and deployed Quantum Jersey, a full-stack e-commerce platform integrating Supabase, PostgreSQL, cloud storage, authentication, and AI-assisted product management. Currently collaborating in a software development team to build Notely, a podcast note taking application, contributing to AI algorithm development, transcript processing, and backend functionality. Continuously expanding expertise in Python, FastAPI, SQL, Docker, AWS, and modern software engineering practices.
+Mechatronics Engineering graduate with experience developing intelligent software systems, backend applications, and AI-powered solutions. Passionate about backend engineering, machine learning, cloud computing, and MLOps, with hands-on experience building production ready applications and engineering solutions. Built and deployed Quantum Jersey, a full-stack e-commerce platform integrating Supabase, PostgreSQL, cloud storage, authentication, and AI-assisted product management. Currently collaborating in a software development team to build Notely, a podcast note taking application, contributing to AI algorithm development, transcript processing, and backend functionality. Continuously expanding expertise in Python, FastAPI, SQL, and modern software engineering practices.
 
 TECHNICAL SKILLS
 Programming Languages: Python, SQL, JavaScript, HTML5, CSS3
 Backend Development: FastAPI, REST APIs, Authentication, Supabase
 Databases: PostgreSQL, Supabase
-Cloud & DevOps: Git, GitHub, Docker, Vercel, AWS
+Cloud & DevOps: Git, GitHub, Vercel
 Machine Learning & Data: NumPy, Pandas, Scikit-learn
 Engineering Tools: SOLIDWORKS, MATLAB, Raspberry Pi, Linux, Microsoft Office Suite
 
@@ -23,6 +23,7 @@ Developing backend logic for transcript analysis, confidence scoring, and intell
 Working collaboratively using Git and GitHub through feature branching, pull requests, and code reviews.
 Collaborating with frontend and backend developers to integrate AI functionality into the application.
 Technologies: TypeScript, Node.js, Git, GitHub, AI Algorithms, Transcript Processing
+GitHub: https://github.com/tope0607/Notely-mvp.git
 
 Quantum Jersey – Full-Stack E-commerce Platform
 Built and deployed a production-ready football merchandise e-commerce platform.
@@ -68,7 +69,7 @@ export const RESUME_DATA = {
     github: "github.com/quantumdata66",
     linkedin: "linkedin.com/in/nurudeen-abdulazeez"
   },
-  summary: "Mechatronics Engineering graduate with experience developing intelligent software systems, backend applications, and AI-powered solutions. Passionate about backend engineering, machine learning, cloud computing, and MLOps, with hands-on experience building production ready applications and engineering solutions. Built and deployed Quantum Jersey, a full-stack e-commerce platform integrating Supabase, PostgreSQL, cloud storage, authentication, and AI-assisted product management. Currently collaborating in a software development team to build Notely, a podcast note taking application, contributing to AI algorithm development, transcript processing, and backend functionality. Continuously expanding expertise in Python, FastAPI, SQL, Docker, AWS, and modern software engineering practices.",
+  summary: "Mechatronics Engineering graduate with experience developing intelligent software systems, backend applications, and AI-powered solutions. Passionate about backend engineering, machine learning, cloud computing, and MLOps, with hands-on experience building production ready applications and engineering solutions. Built and deployed Quantum Jersey, a full-stack e-commerce platform integrating Supabase, PostgreSQL, cloud storage, authentication, and AI-assisted product management. Currently collaborating in a software development team to build Notely, a podcast note taking application, contributing to AI algorithm development, transcript processing, and backend functionality. Continuously expanding expertise in Python, FastAPI, SQL, and modern software engineering practices.",
   education: {
     degree: "Bachelor of Engineering (B.Eng.) – Mechatronics Engineering 2026",
     institution: "Air Force Institute of Technology (AFIT), Kaduna",
@@ -93,7 +94,7 @@ export const RESUME_DATA = {
   ],
   technicalSkills: {
     programming: ["Python", "SQL", "JavaScript", "HTML5", "CSS3"],
-    backendCloud: ["FastAPI", "REST APIs", "Authentication", "Supabase", "Git", "GitHub", "Docker", "Vercel", "AWS"],
+    backendCloud: ["FastAPI", "REST APIs", "Authentication", "Supabase", "Git", "GitHub", "Vercel"],
     machineLearningData: ["NumPy", "Pandas", "Scikit-learn"],
     engineeringTools: ["SOLIDWORKS", "MATLAB", "Raspberry Pi", "Linux", "Microsoft Office Suite"]
   },
@@ -108,7 +109,8 @@ export const RESUME_DATA = {
         "Working collaboratively using Git and GitHub through feature branching, pull requests, and code reviews.",
         "Collaborating with frontend and backend developers to integrate AI functionality into the application."
       ],
-      technologies: ["TypeScript", "Node.js", "Git", "GitHub", "AI Algorithms", "Transcript Processing"]
+      technologies: ["TypeScript", "Node.js", "Git", "GitHub", "AI Algorithms", "Transcript Processing"],
+      githubUrl: "https://github.com/tope0607/Notely-mvp.git"
     },
     {
       name: "Quantum Jersey – Full-Stack E-commerce Platform",

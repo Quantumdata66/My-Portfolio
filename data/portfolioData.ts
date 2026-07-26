@@ -93,10 +93,10 @@ export const TIMELINE_ITEMS: TimelineItem[] = [
   },
   {
     year: "Current",
-    title: "Building Notely & Learning MLOps",
+    title: "Building Notely & Machine Learning Systems",
     subtitle: "AI Application & Backend Engineering",
     description: "Collaborating in a software team building Notely (podcast note taking app), contributing to AI episode matching algorithms, transcript processing, and backend functionality.",
-    tags: ["Notely", "TypeScript", "FastAPI", "AI Integration", "AWS", "MLOps"],
+    tags: ["Notely", "TypeScript", "FastAPI", "AI Integration", "MLOps"],
     isCurrent: true
   }
 ];
@@ -133,13 +133,11 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     category: "Cloud & DevOps",
-    description: "Version control, containerization, cloud infrastructure, and deployment pipelines.",
+    description: "Version control, hosting platforms, and deployment workflows.",
     skills: [
       { name: "Git", highlighted: true },
       { name: "GitHub", highlighted: true },
-      { name: "Docker", highlighted: true },
-      { name: "Vercel", highlighted: true },
-      { name: "AWS", highlighted: true }
+      { name: "Vercel", highlighted: true }
     ]
   },
   {
@@ -186,7 +184,7 @@ export const PROJECTS: Project[] = [
     architecture: "Asynchronous transcript ingestion pipeline -> AI episode matching & confidence scoring -> Backend API service -> Mobile client app.",
     techStack: ["TypeScript", "Node.js", "Python", "FastAPI", "Git", "GitHub", "AI Algorithms"],
     image: "/images/project-notely.jpg",
-    githubUrl: "https://github.com/quantumdata66",
+    githubUrl: "https://github.com/tope0607/Notely-mvp.git",
     liveUrl: "#"
   },
   {
