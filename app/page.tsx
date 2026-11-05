@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CommandMenu } from "@/components/layout/CommandMenu";
@@ -15,12 +15,11 @@ import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { CurrentlyBuilding } from "@/components/sections/CurrentlyBuilding";
 import { Skills } from "@/components/sections/Skills";
-import { BlogSection } from "@/components/sections/BlogSection";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
-  const [cmdMenuOpen, setCmdMenuOpen] = useState(false);
-  const [resumeOpen, setResumeOpen] = useState(false);
+  const [cmdMenuOpen, setCmdMenuOpen] = React.useState(false);
+  const [resumeOpen, setResumeOpen] = React.useState(false);
 
   return (
     <main className="min-h-screen bg-[#090909] text-zinc-100 relative bg-grid-pattern overflow-hidden">
@@ -33,7 +32,7 @@ export default function Home() {
         onOpenResume={() => setResumeOpen(true)}
       />
 
-      {/* Main Sections - Recruiter-Optimized Storyline Flow */}
+      {/* Main Recruiter-Focused Storyline Sections */}
       <Hero onOpenResume={() => setResumeOpen(true)} />
       <About />
       <WhatIBuild />
@@ -41,7 +40,6 @@ export default function Home() {
       <Experience />
       <CurrentlyBuilding />
       <Skills />
-      <BlogSection />
       <Contact />
 
       {/* Footer */}

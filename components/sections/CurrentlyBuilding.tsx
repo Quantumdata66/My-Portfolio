@@ -2,45 +2,41 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Hammer, BookOpen, Award, Sparkles, CheckCircle2 } from "lucide-react";
+import { Hammer, Award, Sparkles, CheckCircle2, BookOpen } from "lucide-react";
+import { CERTIFICATIONS } from "@/data/portfolioData";
 
 export const CurrentlyBuilding: React.FC = () => {
   const activeFocus = [
     {
-      title: "Notely — AI Podcast Intelligence App",
-      description: "Collaborating in a software team building AI-driven episode matching algorithms, transcript processing, and timestamp note extraction.",
-      status: "In Active Development",
+      title: "ScamCheck Threat Detection Engine",
+      description: "Leading backend microservice evolution, expanding Pydantic v2 validation, and integrating rule-based heuristics with empirical ML evaluations.",
+      status: "Nexus BuildLab Lead",
       color: "border-blue-500/30 bg-blue-500/10 text-blue-400"
     },
     {
-      title: "Machine Learning Systems & MLOps",
-      description: "Designing end-to-end ML training pipelines, model monitoring, tabular classification, and low-latency inference endpoints.",
-      status: "Active Research",
+      title: "AI Agentic Workflows & Tool-Augmented LLMs",
+      description: "Implementing structured reasoning, agentic tool invocation, and automated benchmark evaluation across complex multi-step technical workflows.",
+      status: "Active Exploration",
       color: "border-emerald-500/30 bg-emerald-500/10 text-emerald-400"
     },
     {
-      title: "Cloud Infrastructure & Containerization",
-      description: "Deepening hands-on mastery of cloud deployment, serverless microservices, relational database tuning, and production architecture.",
-      status: "Ongoing Skill Building",
+      title: "Production Backend Architecture & API Resiliency",
+      description: "Deepening patterns in PostgreSQL schema migrations, high-throughput FastAPI async concurrency, Dockerized containers, and cloud deployment pipelines.",
+      status: "Continuous Development",
       color: "border-purple-500/30 bg-purple-500/10 text-purple-400"
     }
   ];
 
-  const certifications = [
-    "Google Data Analytics Professional Certificate",
-    "B.Eng Mechatronics Engineering (2026 Graduating Candidate)"
-  ];
-
-  const readingList = [
+  const technicalReadings = [
     "Designing Data-Intensive Applications — Martin Kleppmann",
-    "Python High Performance & FastAPI Microservices Architecture",
-    "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow"
+    "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow — Aurélien Géron",
+    "FastAPI & Modern Async Python Microservice Architecture"
   ];
 
   return (
     <section id="currently-building" className="py-24 relative bg-black/40 border-t border-zinc-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="flex flex-col items-center text-center space-y-4 mb-16">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-400">
@@ -48,20 +44,20 @@ export const CurrentlyBuilding: React.FC = () => {
             <span>Active Engineering Radar</span>
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-            Currently Building & Learning
+            Current Focus &amp; Certifications
           </h2>
           <p className="text-zinc-400 max-w-2xl text-sm sm:text-base">
-            Transparent breakdown of active projects, technical literature, and continuous learning roadmap.
+            Transparent breakdown of active technical initiatives, verified professional certifications, and ongoing engineering literature.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          
-          {/* Active Projects & Systems (Left 7 Cols) */}
+
+          {/* Active Engineering Focus (Left 7 Cols) */}
           <div className="lg:col-span-7 space-y-4">
             <h3 className="text-xs uppercase font-mono font-bold text-zinc-400 tracking-wider flex items-center gap-2 mb-4">
               <Sparkles className="w-4 h-4 text-blue-400" />
-              Active Projects & Engineering Focus
+              <span>Current Technical Focus Areas</span>
             </h3>
 
             {activeFocus.map((item, idx) => (
@@ -84,34 +80,43 @@ export const CurrentlyBuilding: React.FC = () => {
             ))}
           </div>
 
-          {/* Certifications & Reading List (Right 5 Cols) */}
+          {/* Certifications & Academic Milestone (Right 5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
-            
+
             {/* Certifications Card */}
             <div className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-4 shadow-xl">
               <h3 className="text-xs uppercase font-mono font-bold text-zinc-400 tracking-wider flex items-center gap-2">
                 <Award className="w-4 h-4 text-amber-400" />
-                Certifications & Academic Milestone
+                <span>Verified Professional Certifications</span>
               </h3>
-              <div className="space-y-3">
-                {certifications.map((cert, idx) => (
-                  <div key={idx} className="flex items-start gap-3 text-xs text-zinc-300">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
-                    <span>{cert}</span>
+              <div className="space-y-4">
+                {CERTIFICATIONS.map((cert, idx) => (
+                  <div key={idx} className="p-3.5 rounded-xl bg-zinc-900/60 border border-zinc-800/80 space-y-1">
+                    <div className="flex items-start gap-2.5 text-xs text-zinc-200 font-bold">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                      <span>{cert.title}</span>
+                    </div>
+                    <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 pl-6">
+                      <span>{cert.issuer}</span>
+                      <span>{cert.year}</span>
+                    </div>
+                    <p className="text-[11px] text-zinc-400 pl-6 leading-relaxed">
+                      {cert.description}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Reading & Study List Card */}
+            {/* Reading List Card */}
             <div className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-4 shadow-xl">
               <h3 className="text-xs uppercase font-mono font-bold text-zinc-400 tracking-wider flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-purple-400" />
-                Technical Reading & Literature
+                <span>Engineering Literature</span>
               </h3>
-              <div className="space-y-3">
-                {readingList.map((book, idx) => (
-                  <div key={idx} className="flex items-start gap-3 text-xs text-zinc-300 font-mono">
+              <div className="space-y-2.5">
+                {technicalReadings.map((book, idx) => (
+                  <div key={idx} className="flex items-start gap-2.5 text-xs text-zinc-300 font-mono">
                     <span className="text-purple-400 font-bold">•</span>
                     <span>{book}</span>
                   </div>

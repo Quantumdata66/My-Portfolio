@@ -2,8 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Cpu, Terminal, Sparkles, Layers } from "lucide-react";
-import { TIMELINE_ITEMS } from "@/data/portfolioData";
+import { Sparkles, Layers, GraduationCap, Cpu, Server } from "lucide-react";
+import { PERSONAL_INFO } from "@/data/portfolioData";
 
 export const About: React.FC = () => {
   return (
@@ -14,130 +14,100 @@ export const About: React.FC = () => {
         <div className="flex flex-col items-center text-center space-y-4 mb-16">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-mono text-blue-400">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Engineering Perspective</span>
+            <span>Multidisciplinary Background</span>
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-            Who I Am & How I Build
+            Engineering Foundation &amp; Technical Breadth
           </h2>
           <p className="text-zinc-400 max-w-2xl text-sm sm:text-base">
-            Combining rigorous mechatronics systems discipline with modern backend microservices and machine intelligence.
+            Mechatronics Engineering graduate with multidisciplinary experience spanning artificial intelligence, machine learning, software development, backend engineering, and industrial operations.
           </p>
         </div>
 
-        {/* 3 Columns Highlight Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        {/* 4 Pillars of Competence */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           
           <motion.div
             whileHover={{ y: -4 }}
-            className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-4 shadow-xl"
+            className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-3 shadow-xl"
           >
             <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
-              <Cpu className="w-5 h-5" />
+              <Sparkles className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white">Intelligent Systems Architecture</h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
-              I view software through an engineering systems lens — prioritizing low latency, clean API boundaries, state isolation, and deterministic data flow.
+            <h3 className="text-base font-bold text-white">AI &amp; Machine Learning</h3>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Applied experience in dataset preparation, exploratory analysis, classification, fine-tuning transformer models (DistilBERT), Random Forest optimization, and handling severe class imbalance.
             </p>
           </motion.div>
 
           <motion.div
             whileHover={{ y: -4 }}
-            className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-4 shadow-xl"
+            className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-3 shadow-xl"
           >
             <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
-              <Terminal className="w-5 h-5" />
+              <Server className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white">Backend & AI Convergence</h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
-              From building FastAPI microservices to integrating LLM embeddings and Whisper speech-to-text models, I build production AI tools that solve actual problems.
+            <h3 className="text-base font-bold text-white">Software &amp; Backend</h3>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Developing REST APIs in FastAPI, schema modeling in PostgreSQL with Row-Level Security, asynchronous processing, and deploying database-driven web applications.
             </p>
           </motion.div>
 
           <motion.div
             whileHover={{ y: -4 }}
-            className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-4 shadow-xl"
+            className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-3 shadow-xl"
           >
             <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+              <Cpu className="w-5 h-5" />
+            </div>
+            <h3 className="text-base font-bold text-white">Embedded &amp; Mechatronics</h3>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Physical hardware integration: multi-sensor fusion (magnetic, thermal, gas), Raspberry Pi edge compute, ESP32 modules, and desktop PyQt monitoring applications.
+            </p>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ y: -4 }}
+            className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-3 shadow-xl"
+          >
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
               <Layers className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-white">Mechatronics Roots</h3>
-            <p className="text-sm text-zinc-400 leading-relaxed">
-              My background in Mechatronics Engineering gives me deep experience in sensor fusion, control loops, Linux edge systems, and hardware telemetry.
+            <h3 className="text-base font-bold text-white">Industrial Operations</h3>
+            <p className="text-xs text-zinc-400 leading-relaxed">
+              Three tenures of industrial engineering training at the Transmission Company of Nigeria (TCN), focusing on Protection, Control &amp; Metering (PC&amp;M), relay testing, and high-voltage grid systems.
             </p>
           </motion.div>
 
         </div>
 
-        {/* Timeline Section Header */}
-        <div className="text-center mb-12">
-          <h3 className="text-2xl font-bold text-white">Engineering Timeline</h3>
-          <p className="text-xs font-mono text-zinc-500 mt-1">2021 — PRESENT</p>
-        </div>
+        {/* Education & Academic Credentials Spotlight */}
+        <div className="max-w-4xl mx-auto p-8 rounded-3xl bg-[#111111] border border-zinc-800 shadow-2xl">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-b border-zinc-800 pb-6 mb-6">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+                <GraduationCap className="w-6 h-6" />
+              </div>
+              <div>
+                <span className="text-xs font-mono uppercase text-zinc-500">Academic Foundation</span>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">{PERSONAL_INFO.education.degree}</h3>
+                <p className="text-xs text-zinc-400 font-mono mt-0.5">{PERSONAL_INFO.education.institution}</p>
+              </div>
+            </div>
 
-        {/* Timeline Visual Container */}
-        <div className="max-w-4xl mx-auto relative">
-          {/* Vertical Center Line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-emerald-500 to-zinc-800 -translate-x-1/2" />
-
-          <div className="space-y-12 relative">
-            {TIMELINE_ITEMS.map((item, idx) => {
-              const isEven = idx % 2 === 0;
-
-              return (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  className={`relative flex flex-col md:flex-row items-start ${
-                    isEven ? "md:flex-row-reverse" : ""
-                  }`}
-                >
-                  {/* Timeline Node Dot */}
-                  <div className="absolute left-4 md:left-1/2 top-0 w-8 h-8 rounded-full bg-[#090909] border-2 border-blue-500 -translate-x-1/2 flex items-center justify-center z-10 shadow-lg shadow-blue-500/20">
-                    <div className={`w-2.5 h-2.5 rounded-full ${item.isCurrent ? "bg-emerald-400 animate-pulse" : "bg-blue-400"}`} />
-                  </div>
-
-                  {/* Timeline Content Card */}
-                  <div className="ml-12 md:ml-0 md:w-1/2 md:px-8 w-full">
-                    <div className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-3 hover:border-zinc-700 transition-all shadow-xl">
-                      
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs font-mono font-bold px-2.5 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                          {item.year}
-                        </span>
-                        {item.isCurrent && (
-                          <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                            Active
-                          </span>
-                        )}
-                      </div>
-
-                      <h4 className="text-base font-bold text-white">{item.title}</h4>
-                      {item.organization && (
-                        <p className="text-xs font-semibold text-emerald-400">{item.organization}</p>
-                      )}
-                      <p className="text-xs text-zinc-400 font-mono">{item.subtitle}</p>
-
-                      <p className="text-xs text-zinc-300 leading-relaxed">
-                        {item.description}
-                      </p>
-
-                      <div className="flex flex-wrap gap-1.5 pt-2">
-                        {item.tags.map((tag) => (
-                          <span key={tag} className="text-[10px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-400">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-
-                    </div>
-                  </div>
-                </motion.div>
-              );
-            })}
+            <div className="flex flex-wrap sm:flex-col items-start sm:items-end gap-2 text-right">
+              <span className="px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-bold">
+                {PERSONAL_INFO.education.classification}
+              </span>
+              <span className="px-3 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs font-mono">
+                CGPA: <strong className="text-white">{PERSONAL_INFO.education.cgpa}</strong>
+              </span>
+            </div>
           </div>
+
+          <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-sans">
+            Relevant coursework and engineering competencies: Data Analysis, Machine Learning, Sensors &amp; Instrumentation, Control Systems, Microcontroller Interfacing, and Engineering Problem Solving. Combines an engineering mindset with practical exposure to software development, data-driven modeling, and real-world technical environments.
+          </p>
         </div>
 
       </div>

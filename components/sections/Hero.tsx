@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDownRight, FileText, Send, MapPin, Award } from "lucide-react";
+import { ArrowDownRight, FileText, Send, MapPin, Award, CheckCircle2, Terminal } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolioData";
 import { StatusBadge } from "@/components/ui/StatusBadge";
 import { getAssetPath } from "@/lib/assets";
@@ -38,6 +38,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900/80 border border-zinc-800 text-xs text-zinc-400 font-mono">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>{PERSONAL_INFO.location}</span>
+                <span className="text-zinc-600">·</span>
+                <span className="text-zinc-500">WAT (UTC+1)</span>
               </div>
             </div>
 
@@ -78,10 +80,31 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-base sm:text-lg text-zinc-400 leading-relaxed max-w-2xl font-sans"
+              className="text-base sm:text-lg text-zinc-300 leading-relaxed max-w-2xl font-sans"
             >
               {PERSONAL_INFO.bio}
             </motion.p>
+
+            {/* Credibility Snapshot Pills */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.25 }}
+              className="flex flex-wrap items-center gap-2 pt-1 text-xs font-mono text-zinc-400"
+            >
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300">
+                <CheckCircle2 className="w-3.5 h-3.5 text-blue-400" />
+                <span>B.Eng Mechatronics (CGPA: 4.15/5.0)</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300">
+                <Terminal className="w-3.5 h-3.5 text-emerald-400" />
+                <span>DistilBERT 99.1% Acc &amp; 96.4% F1</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300">
+                <Award className="w-3.5 h-3.5 text-amber-400" />
+                <span>Nexus BuildLab Backend Lead</span>
+              </span>
+            </motion.div>
 
             {/* Action Buttons */}
             <motion.div
@@ -94,7 +117,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 href="#projects"
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-500/25 group"
               >
-                <span>View Projects</span>
+                <span>Explore Projects</span>
                 <ArrowDownRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" />
               </a>
 
@@ -143,7 +166,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             className="lg:col-span-5 relative flex justify-center"
           >
             <div className="relative w-full max-w-md aspect-square rounded-2xl overflow-hidden glass-card p-2 border border-zinc-800 shadow-2xl group">
-              {/* Dotun Photo Container */}
+              {/* Photo Container */}
               <div className="relative w-full h-full rounded-xl overflow-hidden bg-zinc-900">
                 <Image
                   src={getAssetPath("/images/dotun.jpg")}
@@ -160,7 +183,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <div className="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-[#090909]/90 border border-white/10 backdrop-blur-md flex items-center justify-between text-xs font-mono text-zinc-300">
                   <div className="flex items-center gap-2">
                     <Award className="w-4 h-4 text-blue-400" />
-                    <span>Backend & Machine Learning Engineer</span>
+                    <span>AI/ML Engineer &amp; Backend Dev</span>
                   </div>
                   <span className="text-[10px] text-emerald-400 font-bold">Lagos, NG</span>
                 </div>

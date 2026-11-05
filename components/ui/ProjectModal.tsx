@@ -2,7 +2,9 @@
 
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ExternalLink, CheckCircle2, Layers, Cpu, Code2, AlertTriangle, Lightbulb } from "lucide-react";
+import {
+  X, ExternalLink, CheckCircle2, Layers, Code2, AlertTriangle, Lightbulb, TrendingUp, Lock, Users, User
+} from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { Project } from "@/data/portfolioData";
 import { getAssetPath } from "@/lib/assets";
@@ -53,7 +55,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
           {/* Close button */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-black/60 border border-white/10 text-zinc-400 hover:text-white hover:bg-black/90 transition-all"
+            className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-black/70 border border-white/10 text-zinc-400 hover:text-white hover:bg-black transition-all"
             aria-label="Close modal"
           >
             <X className="w-5 h-5" />
@@ -68,18 +70,23 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               className="object-cover object-top"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/50 to-transparent" />
             
             <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-end justify-between gap-4">
               <div>
-                <span className="inline-block px-3 py-1 mb-2 text-xs font-semibold tracking-wide uppercase rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                  {project.status}
-                </span>
-                <h2 className="text-3xl font-bold tracking-tight text-white">{project.title}</h2>
-                <p className="text-sm text-zinc-400 mt-1 max-w-xl">{project.subtitle}</p>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                    {project.status}
+                  </span>
+                  <span className="px-3 py-1 text-xs font-semibold tracking-wide uppercase rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700">
+                    {project.category}
+                  </span>
+                </div>
+                <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">{project.title}</h2>
+                <p className="text-xs sm:text-sm text-zinc-400 mt-1 max-w-xl">{project.subtitle}</p>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-2">
                 {project.githubUrl && (
                   <a
                     href={project.githubUrl}
@@ -88,18 +95,35 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                     className="inline-flex items-center gap-2 px-4 py-2 text-xs font-medium rounded-xl bg-zinc-800 border border-zinc-700 text-zinc-200 hover:text-white hover:bg-zinc-700 transition-all"
                   >
                     <GithubIcon className="w-4 h-4" />
-                    GitHub Repository
+                    <span>View Repository</span>
                   </a>
                 )}
-                {project.liveUrl && project.liveUrl !== "#" && (
+                {project.githubPrivate && (
+                  <span className="inline-flex items-center gap-2 px-3.5 py-2 text-xs font-mono rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400">
+                    <Lock className="w-3.5 h-3.5 text-zinc-500" />
+                    <span>Private Repository</span>
+                  </span>
+                )}
+                {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 text-xs font-medium rounded-xl bg-blue-600 text-white hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/20"
+                    className="inline-flex items-center gap-2 px-4 py-2 text-xs font-medium rounded-xl bg-emerald-600 text-white hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-500/20"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    Live Application
+                    <span>Live Platform</span>
+                  </a>
+                )}
+                {project.huggingFaceUrl && (
+                  <a
+                    href={project.huggingFaceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 text-xs font-medium rounded-xl bg-amber-600 text-white hover:bg-amber-500 transition-all shadow-lg shadow-amber-500/20"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    <span>Hugging Face Hub</span>
                   </a>
                 )}
               </div>
@@ -115,21 +139,49 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                 <p className="text-sm font-semibold text-blue-400 mt-1">{project.role}</p>
               </div>
               <div>
-                <span className="text-xs uppercase font-medium text-zinc-500 tracking-wider">Status</span>
+                <span className="text-xs uppercase font-medium text-zinc-500 tracking-wider">Project Type</span>
                 <p className="text-sm font-semibold text-emerald-400 mt-1">{project.status}</p>
               </div>
               <div>
-                <span className="text-xs uppercase font-medium text-zinc-500 tracking-wider">Primary Tech</span>
+                <span className="text-xs uppercase font-medium text-zinc-500 tracking-wider">Primary Stack</span>
                 <p className="text-sm font-semibold text-zinc-300 mt-1">{project.techStack.slice(0, 3).join(", ")}</p>
               </div>
             </div>
+
+            {/* Team Context Note if applicable */}
+            {project.teamContext && (
+              <div className="p-4 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-start gap-3 text-xs text-zinc-300">
+                <Users className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-blue-400">Team Collaboration Context:</strong> {project.teamContext} Personal contributions are explicitly detailed below.
+                </div>
+              </div>
+            )}
+
+            {/* Empirical Evaluation Metrics (if present) */}
+            {project.evaluationMetrics && (
+              <div className="p-6 rounded-xl bg-gradient-to-br from-emerald-950/20 to-zinc-900/60 border border-emerald-500/20 space-y-3">
+                <div className="flex items-center gap-2 text-emerald-400 font-semibold text-sm">
+                  <TrendingUp className="w-4 h-4" />
+                  <span>Reported Evaluation &amp; Empirical Results</span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+                  {project.evaluationMetrics.map((metric, idx) => (
+                    <div key={idx} className="p-3 rounded-lg bg-black/40 border border-zinc-800/80">
+                      <div className="text-[10px] font-mono uppercase text-zinc-400">{metric.label}</div>
+                      <div className="text-base font-bold font-mono text-emerald-400 mt-0.5">{metric.value}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Problem & Solution Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800">
                 <div className="flex items-center gap-2.5 text-amber-400 font-semibold mb-3">
                   <AlertTriangle className="w-5 h-5" />
-                  <span>The Engineering Problem</span>
+                  <span>The Problem Addressed</span>
                 </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">{project.problem}</p>
               </div>
@@ -137,7 +189,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               <div className="p-6 rounded-xl bg-zinc-900/40 border border-zinc-800">
                 <div className="flex items-center gap-2.5 text-emerald-400 font-semibold mb-3">
                   <Lightbulb className="w-5 h-5" />
-                  <span>The System Solution</span>
+                  <span>The Technical Approach</span>
                 </div>
                 <p className="text-sm text-zinc-400 leading-relaxed">{project.solution}</p>
               </div>
@@ -147,25 +199,25 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <div className="p-6 rounded-xl bg-gradient-to-b from-blue-950/20 to-zinc-900/50 border border-blue-500/20">
               <div className="flex items-center gap-2.5 text-blue-400 font-semibold mb-3">
                 <Layers className="w-5 h-5" />
-                <span>System Architecture & Data Flow</span>
+                <span>System Architecture &amp; Data Flow</span>
               </div>
               <p className="text-sm text-zinc-300 leading-relaxed font-mono bg-black/40 p-4 rounded-lg border border-white/5">
                 {project.architecture}
               </p>
             </div>
 
-            {/* Key Responsibilities / Features */}
-            {(project.responsibilities || project.features) && (
+            {/* Explicit Personal Contributions */}
+            {project.personalContributions && project.personalContributions.length > 0 && (
               <div>
                 <h3 className="text-base font-semibold text-white mb-4 flex items-center gap-2">
-                  <Cpu className="w-4 h-4 text-blue-400" />
-                  Key Technical Execution
+                  <User className="w-4 h-4 text-emerald-400" />
+                  <span>My Specific Contributions &amp; Technical Execution</span>
                 </h3>
                 <div className="grid grid-cols-1 gap-2.5">
-                  {(project.responsibilities || project.features)?.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3 p-3 rounded-lg bg-zinc-900/30 border border-zinc-800/60 text-sm text-zinc-300">
+                  {project.personalContributions.map((item, idx) => (
+                    <div key={idx} className="flex items-start gap-3 p-3.5 rounded-lg bg-zinc-900/30 border border-zinc-800/60 text-sm text-zinc-300">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
-                      <span>{item}</span>
+                      <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -176,13 +228,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
             <div>
               <h3 className="text-base font-semibold text-white mb-3 flex items-center gap-2">
                 <Code2 className="w-4 h-4 text-emerald-400" />
-                Technologies & Tools
+                <span>Technologies &amp; Tools</span>
               </h3>
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1.5 text-xs font-medium rounded-lg bg-zinc-800 border border-zinc-700 text-zinc-300"
+                    className="px-3 py-1.5 text-xs font-mono font-medium rounded-lg bg-zinc-800 border border-zinc-700 text-zinc-300"
                   >
                     {tech}
                   </span>

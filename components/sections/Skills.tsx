@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Code2, Server, Database, Cloud, Cpu, Terminal, CheckCircle2, Sparkles } from "lucide-react";
+import { Server, Database, Cloud, Cpu, Terminal, CheckCircle2, Sparkles } from "lucide-react";
 import { SKILL_CATEGORIES } from "@/data/portfolioData";
 
 export const Skills: React.FC = () => {
@@ -17,18 +17,16 @@ export const Skills: React.FC = () => {
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
-      case "Languages":
-        return <Code2 className="w-4 h-4 text-blue-400" />;
-      case "Backend":
-        return <Server className="w-4 h-4 text-emerald-400" />;
-      case "Database":
-        return <Database className="w-4 h-4 text-purple-400" />;
-      case "Cloud & Infrastructure":
-        return <Cloud className="w-4 h-4 text-cyan-400" />;
       case "Machine Learning & AI":
-        return <Sparkles className="w-4 h-4 text-amber-400" />;
-      case "Engineering & Hardware":
-        return <Cpu className="w-4 h-4 text-pink-400" />;
+        return <Sparkles className="w-4 h-4 text-blue-400" />;
+      case "Backend & Systems":
+        return <Server className="w-4 h-4 text-emerald-400" />;
+      case "Data Processing & Analysis":
+        return <Database className="w-4 h-4 text-purple-400" />;
+      case "Cloud, DevOps & Tools":
+        return <Cloud className="w-4 h-4 text-cyan-400" />;
+      case "Engineering & Embedded":
+        return <Cpu className="w-4 h-4 text-amber-400" />;
       default:
         return <Terminal className="w-4 h-4 text-blue-400" />;
     }
@@ -45,10 +43,10 @@ export const Skills: React.FC = () => {
             <span>Technical Capabilities</span>
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
-            Skills & Tooling Matrix
+            Skills &amp; Tooling Matrix
           </h2>
           <p className="text-zinc-400 max-w-2xl text-sm sm:text-base">
-            Curated technology stack across backend systems, cloud infra, data pipelines, machine learning, and physical engineering.
+            Curated technology stack across machine learning pipelines, backend services, cloud platforms, and hardware engineering.
           </p>
         </div>
 
@@ -78,7 +76,7 @@ export const Skills: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.05 }}
-              className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-4 hover:border-zinc-700 transition-all flex flex-col justify-between"
+              className="p-6 rounded-2xl bg-[#111111] border border-zinc-800 space-y-4 hover:border-zinc-700 transition-all flex flex-col justify-between shadow-xl"
             >
               <div>
                 <div className="flex items-center gap-2.5 mb-2">

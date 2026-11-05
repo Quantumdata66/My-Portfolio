@@ -27,10 +27,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCmdMenu, onOpenResume }) =
 
   const navLinks = [
     { name: "About", href: "#about" },
+    { name: "Focus", href: "#what-i-build" },
     { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
-    { name: "Blog", href: "#blog" },
+    { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCmdMenu, onOpenResume }) =
               ABDULAZEEZ
             </span>
             <span className="text-[10px] font-mono text-zinc-400 tracking-widest uppercase">
-              Systems & AI
+              AI &amp; Backend Dev
             </span>
           </div>
         </a>
@@ -98,12 +98,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCmdMenu, onOpenResume }) =
           <button
             onClick={onOpenCmdMenu}
             className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400"
+            aria-label="Search"
           >
             <Command className="w-4 h-4 text-blue-400" />
           </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-400"
+            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -141,7 +143,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCmdMenu, onOpenResume }) =
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-blue-600 text-white font-semibold text-xs"
               >
                 <FileText className="w-4 h-4" />
-                <span>View & Download Resume</span>
+                <span>View &amp; Download Resume</span>
               </button>
             </div>
           </motion.div>

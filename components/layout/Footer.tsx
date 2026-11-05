@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-zinc-300">ABDULAZEEZ NURUDEEN ADEDOTUN</span>
-              <span className="text-[10px] font-mono text-zinc-500">Backend • AI • Mechatronics Engineer</span>
+              <span className="text-[10px] font-mono text-zinc-500">AI/ML Engineer · Backend Developer · B.Eng Mechatronics</span>
             </div>
           </div>
 
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 border border-zinc-800 font-mono text-zinc-400">
             <Clock className="w-3.5 h-3.5 text-blue-400" />
             <span>Lagos, Nigeria:</span>
-            <span className="text-white font-bold">{lagosTime || "10:45 PM WAT"}</span>
+            <span className="text-white font-bold">{lagosTime || "WAT (UTC+1)"}</span>
           </div>
 
           {/* Social Icons */}
@@ -80,10 +80,10 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Copyright & SEO details */}
+        {/* Copyright & Technical Stack Footnote */}
         <div className="pt-6 border-t border-zinc-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-[11px] text-zinc-600 font-mono">
           <p>© {new Date().getFullYear()} Abdulazeez Nurudeen Adedotun. All rights reserved.</p>
-          <p>Engineered with Next.js 15, TypeScript, TailwindCSS & Framer Motion.</p>
+          <p>Engineered with Next.js 15, TypeScript, TailwindCSS &amp; Framer Motion.</p>
         </div>
 
       </div>

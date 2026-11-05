@@ -26,6 +26,14 @@ export const Contact: React.FC = () => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
     
+    // Fallback: open mailto link with form details
+    const mailtoUrl = `mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(
+      formData.subject || "Portfolio Contact from " + formData.name
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+    window.open(mailtoUrl, "_blank");
+
     setFormSubmitted(true);
     setTimeout(() => {
       setFormSubmitted(false);
@@ -44,18 +52,18 @@ export const Contact: React.FC = () => {
             <div className="space-y-4">
               <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-xs font-mono text-blue-400">
                 <MessageSquare className="w-3.5 h-3.5" />
-                <span>Initiate Contact</span>
+                <span>Get In Touch</span>
               </span>
 
               <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
                 Let&apos;s Build <br />
                 <span className="bg-gradient-to-r from-blue-400 via-emerald-400 to-white bg-clip-text text-transparent">
-                  Something Meaningful.
+                  Intelligent Systems.
                 </span>
               </h2>
 
               <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-lg">
-                Whether you want to discuss backend microservices, machine learning engineering, mechatronics capstone projects, or high-throughput AI application architecture — my inbox is open.
+                I am actively seeking opportunities in AI/ML Engineering, AI Evaluation, AI Agent Development, Backend Engineering, and Software Development. Based in Lagos, Nigeria (WAT, UTC+1), available for full-time remote roles (40+ hrs/week) with immediate start.
               </p>
             </div>
 
@@ -80,10 +88,10 @@ export const Contact: React.FC = () => {
               </button>
             </div>
 
-            {/* Social Channels */}
+            {/* Verified Social Channels */}
             <div className="space-y-3">
               <span className="text-xs uppercase font-mono font-semibold text-zinc-500 tracking-wider">
-                Professional Channels
+                Professional Profiles
               </span>
 
               <div className="grid grid-cols-2 gap-3">
@@ -96,7 +104,7 @@ export const Contact: React.FC = () => {
                   <GithubIcon className="w-5 h-5 text-zinc-400 group-hover:text-white transition-colors" />
                   <div>
                     <h4 className="text-xs font-bold font-mono">GitHub</h4>
-                    <span className="text-[10px] text-zinc-500">@quantumdata66</span>
+                    <span className="text-[10px] text-zinc-500">@Quantumdata66</span>
                   </div>
                 </a>
 
@@ -115,6 +123,15 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
+            {/* Availability Badge */}
+            <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs font-mono text-zinc-300 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Availability: Full-time (40+ hrs/wk)</span>
+              </div>
+              <span className="text-emerald-400 font-bold">Immediate</span>
+            </div>
+
           </div>
 
           {/* Right Column: Interactive Form */}
@@ -127,15 +144,15 @@ export const Contact: React.FC = () => {
             >
               <div className="border-b border-zinc-800/80 pb-4">
                 <h3 className="text-lg font-bold text-white">Send a Message</h3>
-                <p className="text-xs text-zinc-400 mt-0.5">Expect a response within 24 hours.</p>
+                <p className="text-xs text-zinc-400 mt-0.5">Expect a direct response within 24 hours.</p>
               </div>
 
               {formSubmitted ? (
                 <div className="p-8 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-center space-y-3">
                   <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto" />
-                  <h4 className="text-base font-bold text-white">Message Transmitted Successfully</h4>
+                  <h4 className="text-base font-bold text-white">Opening Email Client</h4>
                   <p className="text-xs text-zinc-300">
-                    Thank you for reaching out, {formData.name}. I will review your message and reply to {formData.email} promptly.
+                    Thank you, {formData.name}. If your email client did not open automatically, please reach out directly to {PERSONAL_INFO.email}.
                   </p>
                 </div>
               ) : (
@@ -148,7 +165,7 @@ export const Contact: React.FC = () => {
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="e.g. Sarah Jenkins"
+                        placeholder="e.g. Alex Vance"
                         className="w-full px-4 py-3 text-xs rounded-xl bg-zinc-900 border border-zinc-800 text-white placeholder-zinc-500 outline-none focus:border-blue-500 transition-all font-sans"
                       />
                     </div>
@@ -160,7 +177,7 @@ export const Contact: React.FC = () => {
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="sarah@company.com"
+                        placeholder="alex@company.com"
                         className="w-full px-4 py-3 text-xs rounded-xl bg-zinc-900 border border-zinc-800 text-white placeholder-zinc-500 outline-none focus:border-blue-500 transition-all font-sans"
                       />
                     </div>
@@ -172,7 +189,7 @@ export const Contact: React.FC = () => {
                       type="text"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="e.g. Backend Engineering Collaboration"
+                      placeholder="e.g. AI/ML Engineering Role / Collaboration"
                       className="w-full px-4 py-3 text-xs rounded-xl bg-zinc-900 border border-zinc-800 text-white placeholder-zinc-500 outline-none focus:border-blue-500 transition-all font-sans"
                     />
                   </div>
@@ -184,7 +201,7 @@ export const Contact: React.FC = () => {
                       rows={5}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Tell me about your project, engineering scope, or role details..."
+                      placeholder="Tell me about your role, technical scope, or project..."
                       className="w-full px-4 py-3 text-xs rounded-xl bg-zinc-900 border border-zinc-800 text-white placeholder-zinc-500 outline-none focus:border-blue-500 transition-all font-sans custom-scrollbar"
                     />
                   </div>
@@ -194,7 +211,7 @@ export const Contact: React.FC = () => {
                     className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition-all shadow-lg shadow-blue-500/25"
                   >
                     <Send className="w-4 h-4" />
-                    <span>Send Transmission</span>
+                    <span>Send Message</span>
                   </button>
                 </form>
               )}

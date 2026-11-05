@@ -1,153 +1,91 @@
 export const RAW_RESUME_TEXT = `ABDULAZEEZ NURUDEEN ADEDOTUN
-Mechatronics Engineer | Machine Learning |Backend Engineer & Cloud Computing
-Lagos, Nigeria  |  +234 902 636 6179   |  nurdul4002@gmail.com
-LinkedIn: linkedin.com/in/nurudeen-abdulazeez  |  GitHub: github.com/quantumdata66
+AI/ML Engineer  |  Backend Developer
+Lagos, Nigeria  |  +234 902 636 6179  |  nurdul4002@gmail.com
+LinkedIn: linkedin.com/in/nurudeen-abdulazeez  |  GitHub: github.com/Quantumdata66  |  Portfolio: quantumdata66.github.io/My-Portfolio
 
 PROFESSIONAL SUMMARY
-Mechatronics Engineering graduate with experience developing intelligent software systems, backend applications, and AI-powered solutions. Passionate about backend engineering, machine learning, cloud computing, and MLOps, with hands-on experience building production ready applications and engineering solutions. Built and deployed Quantum Jersey, a full-stack e-commerce platform integrating Supabase, PostgreSQL, cloud storage, authentication, and AI-assisted product management. Currently collaborating in a software development team to build Notely, a podcast note taking application, contributing to AI algorithm development, transcript processing, and backend functionality. Continuously expanding expertise in Python, FastAPI, SQL, and modern software engineering practices.
+Mechatronics Engineering graduate (B.Eng., Second Class Upper, CGPA 4.15/5.00) with practical project experience in machine learning, natural language processing, AI-assisted software development, and backend engineering. Experienced in preparing datasets, developing and evaluating machine learning models, improving classification performance, and integrating technical solutions into user-facing applications.
 
-TECHNICAL SKILLS
-Programming Languages: Python, SQL, JavaScript, HTML5, CSS3
-Backend Development: FastAPI, REST APIs, Authentication, Supabase
-Databases: PostgreSQL, Supabase
-Cloud & DevOps: Git, GitHub, Vercel
-Machine Learning & Data: NumPy, Pandas, Scikit-learn
-Engineering Tools: SOLIDWORKS, MATLAB, Raspberry Pi, Linux, Microsoft Office Suite
+Developed an NLP-based spam classification system using TF-IDF, Logistic Regression, and fine-tuned DistilBERT, achieving 99.10% accuracy and a 96.41% F1-score. Also developed a predictive maintenance model using the AI4I 2020 dataset, improving a Random Forest model's F1-score from 71.21% to 88.19% through feature engineering and model optimisation.
 
-PROJECTS
-Notely (Ongoing)
-AI / Backend Developer | Team Project
-Collaborating in a cross-functional software development team to build Notely, a mobile application that enables users to capture timestamped notes while listening to podcasts.
-Contributing to the design and implementation of AI-driven episode matching and transcript processing algorithms.
-Developing backend logic for transcript analysis, confidence scoring, and intelligent note extraction.
-Working collaboratively using Git and GitHub through feature branching, pull requests, and code reviews.
-Collaborating with frontend and backend developers to integrate AI functionality into the application.
-Technologies: TypeScript, Node.js, Git, GitHub, AI Algorithms, Transcript Processing
-GitHub: https://github.com/tope0607/Notely-mvp.git
+Additional experience includes contributing to AI-powered application development, backend integration, database-driven software, and an embedded machine-learning project involving sensor fusion, Random Forest classification, and a PyQt monitoring interface.
 
-Quantum Jersey – Full-Stack E-commerce Platform
-Built and deployed a production-ready football merchandise e-commerce platform.
-Implemented Supabase Authentication, PostgreSQL database integration, cloud object storage, and secure Row-Level Security (RLS) policies.
-Developed an administrative dashboard supporting product management, inventory updates, and image uploads.
-Integrated AI-assisted product management workflows to streamline product publishing.
-Deployed the application on Vercel with a custom domain.
-Technologies: HTML, CSS, JavaScript, Supabase, PostgreSQL, GitHub, Vercel
+WORK EXPERIENCE
+Nexus BuildLab  —  ML Intern / Backend Lead & Group Leader
+July 2026 – October 2026  |  Remote
+• Contributing to the development of ScamCheck, an AI-powered application designed to identify potentially fraudulent messages.
+• Taking responsibility for backend development alongside machine learning internship responsibilities.
+• Working across the machine learning and application development workflow, collaborating with teammates to integrate technical components.
+• Coordinating team activities, tracking project progress, and supporting technical decision-making.
+• Collaborating with other team members on implementation, testing, and project delivery.
 
-Design and Development of an Underground IED Detection System Using Sensor Fusion
-Bachelor of Engineering Final Year Project
-Designed and developed an intelligent underground IED detection prototype using sensor fusion techniques and HMI GUI.
-Integrated magnetic, thermal, and gas sensors with Raspberry Pi for real-time environmental monitoring.
-Developed a PyQt graphical user interface (HMI system) for system visualization and monitoring.
-Evaluated machine learning techniques, including random forest, to improve detection reliability and reduce false positives.
-Technologies: Python, Raspberry Pi, PyQt, HMI, Machine Learning, Sensor Fusion
-GitHub: https://github.com/Danny26y/UED_Model/
+Notely  —  AI / Backend Developer
+December 2025 – June 2026  |  Remote
+• Contributing to the development of an AI-powered podcast note-taking application that supports timestamped notes and relevant episode information.
+• Working on transcript-processing and information-extraction workflows.
+• Contributing to AI-driven episode matching and confidence-scoring workflows.
+• Reviewing extracted information and generated outputs for relevance, accuracy, and quality.
+• Using Git and GitHub for version control, feature branches, pull requests, and collaborative code reviews.
 
-INDUSTRIAL EXPERIENCE
-Industrial Trainee  |  Transmission Company of Nigeria (TCN) Jul 2021–Dec 2021, Jun–Sep 2024, Apr–Oct 2025
-Worked across transmission operations and the Protection, Control & Metering (PC&M) department.
-Assisted in preventive maintenance of high-voltage transmission infrastructure.
-Participated in relay testing, protection system maintenance, and equipment inspections.
-Gained practical experience in electrical transmission systems, engineering maintenance, and operational safety procedures.
+Transmission Company of Nigeria (TCN)  —  Industrial Trainee
+Jul 2021 – Dec 2021; Jun 2024 – Sep 2024; Apr 2025 – Oct 2025  |  Nigeria
+• Gained practical exposure to electricity transmission operations, particularly Protection, Control and Metering.
+• Participated in preventive maintenance activities, equipment inspections, and operational monitoring.
+• Observed and supported relay testing and maintenance procedures.
+• Developed an understanding of transmission infrastructure, including 132kV and 33kV systems and 60MVA power transformers.
+• Worked in an environment that required adherence to technical procedures, workplace safety, and operational discipline.
+
+SELECTED PROJECTS
+SMS Spam Detection — NLP & Transformer Classification (2026 | Nexus BuildLab)
+• Developed an SMS spam classification system using the SMS Spam Collection dataset.
+• Implemented a TF-IDF and Logistic Regression baseline and compared it with a fine-tuned DistilBERT transformer model.
+• Achieved 99.10% accuracy and a 96.41% F1-score with DistilBERT.
+• Reduced missed spam predictions from 30 with the baseline model to 4 with the transformer model in the reported evaluation.
+• Built a Streamlit interface and deployed the application using Hugging Face (nurdul/spam_distilbert-sms).
+• Considered model limitations, false predictions, privacy, and potential bias during evaluation.
+
+Predictive Maintenance — Machine Failure Prediction (2026 | Nexus BuildLab)
+• Developed a machine-learning classification pipeline using the AI4I 2020 Predictive Maintenance dataset, containing 10,000 records.
+• Conducted data preprocessing, exploratory analysis, feature engineering, and feature selection.
+• Addressed class imbalance (3.39% failure rate) and trained machine-learning models, including Random Forest.
+• Applied five-fold GridSearchCV and decision-threshold optimisation to improve model performance.
+• Improved the Random Forest F1-score from 71.21% to 88.19% and reduced false positives from 17 to 3 in the reported evaluation.
+
+ScamCheck — AI-Powered Scam Detection Application (2026 | Nexus BuildLab)
+• Contributing to a collaborative application designed to help users identify potentially fraudulent messages.
+• Architected backend microservices in FastAPI with Pydantic v2 schemas and 88 passing Pytest tests.
+• Collaborated with the team to develop the application workflow, connecting detection logic to user-facing APIs.
+
+Quantum Jersey — Full-Stack E-Commerce Platform (2024 – Ongoing | Personal Project)
+• Designed, developed, and launched an e-commerce platform for a sportswear retail business (quantumjersey.vercel.app).
+• Implemented product catalogue and inventory-management functionality.
+• Built database-backed features using PostgreSQL and Supabase with Row Level Security (RLS) and storage.
+• Integrated WhatsApp-based checkout to support customer ordering. Deployed via Vercel.
+
+Auto Clinic — Automotive Service & Equipment Platform (2025 | Personal Project)
+• Built a web application for presenting automotive equipment and vehicle maintenance services.
+• Developed features for service and equipment information, maintenance-related workflows, and appointment booking.
+• Used AI-assisted development tools to support implementation and accelerate development.
+
+Underground IED Detection System Using Sensor Fusion (2025 – 2026 | B.Eng. Final-Year Project)
+• Designed and developed an underground explosive detection rover integrating magnetic (QMC5883I), thermal (AMG8833), and gas sensors.
+• Processed sensor readings and applied sensor-fusion techniques to identify subterranean hazardous objects.
+• Trained a Random Forest classification model and conducted comparative evaluation against a shallow ML baseline.
+• Developed a PyQt-based monitoring application to display live events and detection information transmitted from the rover.
+• Interfaced Raspberry Pi 4 and ESP32 components as part of the embedded system architecture.
 
 EDUCATION
-Bachelor of Engineering (B.Eng.) – Mechatronics Engineering 2026
-Air Force Institute of Technology (AFIT), Kaduna
+Air Force Institute of Technology (AFIT), Kaduna, Nigeria
+Bachelor of Engineering (B.Eng.), Mechatronics Engineering | 2022 – 2026
+Classification: Second Class Upper  |  CGPA: 4.15 / 5.00
+
+TECHNICAL SKILLS (Skills & Tools)
+Machine Learning | Python | Software Development | Data Science | Backend Development | Natural Language Processing (NLP) | Scikit-learn | Transformers | DistilBERT | Random Forest | Logistic Regression | Pandas | NumPy | SQL | FastAPI | REST APIs | PostgreSQL | Supabase | Git | GitHub | Streamlit | Hugging Face | Linux | Vercel | AI Agents | Agentic Workflows | PyQt | Raspberry Pi | Sensor Fusion | MATLAB | SOLIDWORKS
 
 CERTIFICATIONS
-Google Data Analytics Professional Certificate
+• Mercor — Introduction to Agents
+• Google Data Analytics Professional Certificate
 
-CORE COMPETENCIES
-Backend Development  •  Machine Learning  •  Cloud Computing  •  REST API Development  •  Database Management  •  Software Development  •  Team Collaboration  •  Problem Solving  •  Analytical Thinking  •  Technical Documentation  •  Continuous Learning`;
-
-export const RESUME_DATA = {
-  header: {
-    name: "ABDULAZEEZ NURUDEEN ADEDOTUN",
-    title: "Mechatronics Engineer | Machine Learning |Backend Engineer & Cloud Computing",
-    location: "Lagos, Nigeria",
-    phone: "+234 902 636 6179",
-    email: "nurdul4002@gmail.com",
-    github: "github.com/quantumdata66",
-    linkedin: "linkedin.com/in/nurudeen-abdulazeez"
-  },
-  summary: "Mechatronics Engineering graduate with experience developing intelligent software systems, backend applications, and AI-powered solutions. Passionate about backend engineering, machine learning, cloud computing, and MLOps, with hands-on experience building production ready applications and engineering solutions. Built and deployed Quantum Jersey, a full-stack e-commerce platform integrating Supabase, PostgreSQL, cloud storage, authentication, and AI-assisted product management. Currently collaborating in a software development team to build Notely, a podcast note taking application, contributing to AI algorithm development, transcript processing, and backend functionality. Continuously expanding expertise in Python, FastAPI, SQL, and modern software engineering practices.",
-  education: {
-    degree: "Bachelor of Engineering (B.Eng.) – Mechatronics Engineering 2026",
-    institution: "Air Force Institute of Technology (AFIT), Kaduna",
-    location: "Kaduna, Nigeria",
-    graduationYear: "2026"
-  },
-  certifications: [
-    "Google Data Analytics Professional Certificate"
-  ],
-  coreCompetencies: [
-    "Backend Development",
-    "Machine Learning",
-    "Cloud Computing",
-    "REST API Development",
-    "Database Management",
-    "Software Development",
-    "Team Collaboration",
-    "Problem Solving",
-    "Analytical Thinking",
-    "Technical Documentation",
-    "Continuous Learning"
-  ],
-  technicalSkills: {
-    programming: ["Python", "SQL", "JavaScript", "HTML5", "CSS3"],
-    backendCloud: ["FastAPI", "REST APIs", "Authentication", "Supabase", "Git", "GitHub", "Vercel"],
-    machineLearningData: ["NumPy", "Pandas", "Scikit-learn"],
-    engineeringTools: ["SOLIDWORKS", "MATLAB", "Raspberry Pi", "Linux", "Microsoft Office Suite"]
-  },
-  projects: [
-    {
-      name: "Notely (Ongoing)",
-      role: "AI / Backend Developer | Team Project",
-      bullets: [
-        "Collaborating in a cross-functional software development team to build Notely, a mobile application that enables users to capture timestamped notes while listening to podcasts.",
-        "Contributing to the design and implementation of AI-driven episode matching and transcript processing algorithms.",
-        "Developing backend logic for transcript analysis, confidence scoring, and intelligent note extraction.",
-        "Working collaboratively using Git and GitHub through feature branching, pull requests, and code reviews.",
-        "Collaborating with frontend and backend developers to integrate AI functionality into the application."
-      ],
-      technologies: ["TypeScript", "Node.js", "Git", "GitHub", "AI Algorithms", "Transcript Processing"],
-      githubUrl: "https://github.com/tope0607/Notely-mvp.git"
-    },
-    {
-      name: "Quantum Jersey – Full-Stack E-commerce Platform",
-      role: "Full-Stack Developer",
-      bullets: [
-        "Built and deployed a production-ready football merchandise e-commerce platform.",
-        "Implemented Supabase Authentication, PostgreSQL database integration, cloud object storage, and secure Row-Level Security (RLS) policies.",
-        "Developed an administrative dashboard supporting product management, inventory updates, and image uploads.",
-        "Integrated AI-assisted product management workflows to streamline product publishing.",
-        "Deployed the application on Vercel with a custom domain."
-      ],
-      technologies: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "GitHub", "Vercel"]
-    },
-    {
-      name: "Design and Development of an Underground IED Detection System Using Sensor Fusion",
-      role: "Bachelor of Engineering Final Year Project",
-      bullets: [
-        "Designed and developed an intelligent underground IED detection prototype using sensor fusion techniques and HMI GUI.",
-        "Integrated magnetic, thermal, and gas sensors with Raspberry Pi for real-time environmental monitoring.",
-        "Developed a PyQt graphical user interface (HMI system) for system visualization and monitoring.",
-        "Evaluated machine learning techniques, including random forest, to improve detection reliability and reduce false positives."
-      ],
-      technologies: ["Python", "Raspberry Pi", "PyQt", "HMI", "Machine Learning", "Sensor Fusion"],
-      githubUrl: "https://github.com/Danny26y/UED_Model/"
-    }
-  ],
-  experience: [
-    {
-      company: "Transmission Company of Nigeria (TCN)",
-      role: "Industrial Trainee",
-      period: "Jul 2021–Dec 2021, Jun–Sep 2024, Apr–Oct 2025",
-      bullets: [
-        "Worked across transmission operations and the Protection, Control & Metering (PC&M) department.",
-        "Assisted in preventive maintenance of high-voltage transmission infrastructure.",
-        "Participated in relay testing, protection system maintenance, and equipment inspections.",
-        "Gained practical experience in electrical transmission systems, engineering maintenance, and operational safety procedures."
-      ]
-    }
-  ]
-};
+LANGUAGES
+English — Fluent
+`;

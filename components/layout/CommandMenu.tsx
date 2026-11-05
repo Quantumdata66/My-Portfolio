@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, FileText, Mail, ExternalLink, Code2, User, FolderKanban, Terminal, Sparkles, X } from "lucide-react";
+import { Search, FileText, ExternalLink, Code2, User, FolderKanban, Terminal, Sparkles, X, Briefcase } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { PERSONAL_INFO } from "@/data/portfolioData";
 
@@ -15,7 +15,7 @@ interface CommandMenuProps {
 export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose, onOpenResume }) => {
   const [query, setQuery] = useState("");
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
@@ -61,7 +61,7 @@ export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose, onOpe
             <input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Type a command or search..."
+              placeholder="Type a section name or action..."
               className="w-full py-4 text-sm bg-transparent outline-none text-white placeholder-zinc-500 font-sans"
               autoFocus
             />
@@ -85,42 +85,42 @@ export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose, onOpe
                   className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-zinc-800/80 text-left text-zinc-300 hover:text-white transition-all group"
                 >
                   <Sparkles className="w-4 h-4 text-blue-400 group-hover:scale-110 transition-transform" />
-                  <span>Home / Overview</span>
+                  <span>Overview &amp; Hero</span>
                 </button>
                 <button
                   onClick={() => scrollToSection("about")}
                   className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-zinc-800/80 text-left text-zinc-300 hover:text-white transition-all group"
                 >
                   <User className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
-                  <span>About & Timeline</span>
+                  <span>About &amp; Academic Honors</span>
                 </button>
                 <button
                   onClick={() => scrollToSection("projects")}
                   className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-zinc-800/80 text-left text-zinc-300 hover:text-white transition-all group"
                 >
                   <FolderKanban className="w-4 h-4 text-purple-400 group-hover:scale-110 transition-transform" />
-                  <span>Featured Projects</span>
-                </button>
-                <button
-                  onClick={() => scrollToSection("skills")}
-                  className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-zinc-800/80 text-left text-zinc-300 hover:text-white transition-all group"
-                >
-                  <Code2 className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
-                  <span>Skills & Competencies</span>
+                  <span>7 Verified Projects &amp; Case Studies</span>
                 </button>
                 <button
                   onClick={() => scrollToSection("experience")}
                   className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-zinc-800/80 text-left text-zinc-300 hover:text-white transition-all group"
                 >
-                  <Terminal className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
-                  <span>Industrial Experience</span>
+                  <Briefcase className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
+                  <span>Career Experience (Nexus BuildLab, Notely, TCN)</span>
+                </button>
+                <button
+                  onClick={() => scrollToSection("skills")}
+                  className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-zinc-800/80 text-left text-zinc-300 hover:text-white transition-all group"
+                >
+                  <Code2 className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
+                  <span>Skills &amp; Tooling Matrix</span>
                 </button>
                 <button
                   onClick={() => scrollToSection("contact")}
                   className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-zinc-800/80 text-left text-zinc-300 hover:text-white transition-all group"
                 >
-                  <Mail className="w-4 h-4 text-pink-400 group-hover:scale-110 transition-transform" />
-                  <span>Contact Me</span>
+                  <Terminal className="w-4 h-4 text-pink-400 group-hover:scale-110 transition-transform" />
+                  <span>Contact &amp; Work Availability</span>
                 </button>
               </div>
             </div>
@@ -128,7 +128,7 @@ export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose, onOpe
             {/* Actions Group */}
             <div>
               <div className="px-3 py-1.5 text-[11px] uppercase font-bold text-zinc-500 tracking-wider">
-                Actions & Links
+                Actions &amp; External Profiles
               </div>
               <div className="space-y-1 mt-1">
                 <button
@@ -140,10 +140,10 @@ export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose, onOpe
                 >
                   <div className="flex items-center gap-3">
                     <FileText className="w-4 h-4 text-blue-400" />
-                    <span>View & Download Curriculum Vitae</span>
+                    <span>Download Curriculum Vitae (PDF)</span>
                   </div>
                   <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                    PDF / TXT
+                    PDF
                   </span>
                 </button>
                 
@@ -156,7 +156,7 @@ export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose, onOpe
                 >
                   <div className="flex items-center gap-3">
                     <GithubIcon className="w-4 h-4 text-zinc-400" />
-                    <span>GitHub Profile (@quantumdata66)</span>
+                    <span>GitHub Profile (@Quantumdata66)</span>
                   </div>
                   <ExternalLink className="w-3.5 h-3.5 text-zinc-500" />
                 </a>
@@ -179,8 +179,7 @@ export const CommandMenu: React.FC<CommandMenuProps> = ({ isOpen, onClose, onOpe
           </div>
 
           <div className="p-3 bg-zinc-950 border-t border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 font-mono">
-            <span>Use <kbd className="px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700 text-zinc-300 text-[10px]">↑</kbd> <kbd className="px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700 text-zinc-300 text-[10px]">↓</kbd> to navigate</span>
-            <span><kbd className="px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700 text-zinc-300 text-[10px]">ESC</kbd> to close</span>
+            <span>Use <kbd className="px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700 text-zinc-300 text-[10px]">ESC</kbd> to close</span>
           </div>
         </motion.div>
       </div>
