@@ -57,7 +57,7 @@ ScamCheck — AI-Powered Scam Detection Application (2026 | Nexus BuildLab)
 • Collaborated with the team to develop the application workflow, connecting detection logic to user-facing APIs.
 
 Quantum Jersey — Full-Stack E-Commerce Platform (September 2024 – Ongoing | Full-Stack Developer)
-• Independently designed and built a full-stack e-commerce web platform for sportswear merchandise (quantumjersey.vercel.app).
+• Independently designed and built a full-stack e-commerce web platform for sportswear merchandise (quantumjersey.com.ng).
 • Implemented dynamic product catalogue, inventory management, and administrative platform functionality.
 • Built database-backed features using PostgreSQL and Supabase with authentication, Row-Level Security (RLS), and cloud image storage.
 • Integrated WhatsApp checkout channel to support customer order routing; deployed the application on Vercel.

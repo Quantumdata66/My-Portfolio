@@ -282,7 +282,7 @@ export const PROJECTS: Project[] = [
     architecture: "Frontend UI -> Supabase Auth & PostgreSQL Database (RLS Enforced) -> Cloud Object Storage -> WhatsApp Order Routing -> Vercel Edge Hosting.",
     techStack: ["JavaScript", "HTML5", "CSS3", "PostgreSQL", "Supabase", "Row-Level Security", "Vercel"],
     image: "/images/quantum-jersey.jpg",
-    liveUrl: "https://quantumjersey.vercel.app/",
+    liveUrl: "https://quantumjersey.com.ng/",
     githubPrivate: true
   },
   {
