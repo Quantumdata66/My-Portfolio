@@ -20,7 +20,7 @@ July 2026 – October 2026  |  Remote
 • Collaborating with other team members on implementation, testing, and project delivery.
 
 Notely  —  AI / Backend Developer
-December 2025 – June 2026  |  Remote
+December 2025 – June 2026  |  Kaduna
 • Contributing to the development of an AI-powered podcast note-taking application that supports timestamped notes and relevant episode information.
 • Working on transcript-processing and information-extraction workflows.
 • Contributing to AI-driven episode matching and confidence-scoring workflows.
@@ -28,7 +28,7 @@ December 2025 – June 2026  |  Remote
 • Using Git and GitHub for version control, feature branches, pull requests, and collaborative code reviews.
 
 Transmission Company of Nigeria (TCN)  —  Industrial Trainee
-Jul 2021 – Dec 2021; Jun 2024 – Sep 2024; Apr 2025 – Oct 2025  |  Nigeria
+Jul 2021 – Dec 2021; Jun 2024 – Sep 2024; Apr 2025 – Oct 2025  |  Lagos
 • Gained practical exposure to electricity transmission operations, particularly Protection, Control and Metering.
 • Participated in preventive maintenance activities, equipment inspections, and operational monitoring.
 • Observed and supported relay testing and maintenance procedures.
@@ -56,11 +56,12 @@ ScamCheck — AI-Powered Scam Detection Application (2026 | Nexus BuildLab)
 • Architected backend microservices in FastAPI with Pydantic v2 schemas and 88 passing Pytest tests.
 • Collaborated with the team to develop the application workflow, connecting detection logic to user-facing APIs.
 
-Quantum Jersey — Full-Stack E-Commerce Platform (2024 – Ongoing | Personal Project)
-• Designed, developed, and launched an e-commerce platform for a sportswear retail business (quantumjersey.vercel.app).
-• Implemented product catalogue and inventory-management functionality.
-• Built database-backed features using PostgreSQL and Supabase with Row Level Security (RLS) and storage.
-• Integrated WhatsApp-based checkout to support customer ordering. Deployed via Vercel.
+Quantum Jersey — Full-Stack E-Commerce Platform (September 2024 – Ongoing | Full-Stack Developer)
+• Independently designed and built a full-stack e-commerce web platform for sportswear merchandise (quantumjersey.vercel.app).
+• Implemented dynamic product catalogue, inventory management, and administrative platform functionality.
+• Built database-backed features using PostgreSQL and Supabase with authentication, Row-Level Security (RLS), and cloud image storage.
+• Integrated WhatsApp checkout channel to support customer order routing; deployed the application on Vercel.
+• Currently continuing development of product catalogue automation and related platform workflows.
 
 Auto Clinic — Automotive Service & Equipment Platform (2025 | Personal Project)
 • Built a web application for presenting automotive equipment and vehicle maintenance services.
