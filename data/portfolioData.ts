@@ -165,7 +165,7 @@ export const PROJECTS: Project[] = [
     ],
     architecture: "SMS Text -> DistilBERT Tokenizer -> Fine-Tuned DistilBERT Classifier Head -> Softmax Probabilities -> Streamlit / Hugging Face Inference.",
     techStack: ["Python", "PyTorch", "Hugging Face", "Transformers", "DistilBERT", "Scikit-learn", "Streamlit"],
-    image: "/images/project-notely.jpg",
+    image: "/images/project-spam-nlp.jpg",
     githubUrl: "https://github.com/Quantumdata66/NLP-SPAM_MESSAGES-",
     huggingFaceUrl: "https://huggingface.co/nurdul/spam_distilbert-sms"
   },
@@ -229,7 +229,7 @@ export const PROJECTS: Project[] = [
     ],
     architecture: "React Client -> FastAPI REST API -> Pydantic Schema Validation -> Detection & Heuristics Engine -> Explainability Payload.",
     techStack: ["FastAPI", "Python", "Pydantic", "Pytest", "React", "TypeScript", "NLP", "Vercel"],
-    image: "/images/project-notely.jpg",
+    image: "/images/project-scamcheck.jpg",
     githubUrl: "https://github.com/Quantumdata66/Scamcheck",
     liveUrl: "https://scam-check1.vercel.app/"
   },
